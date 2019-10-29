@@ -1,6 +1,7 @@
 ---
 title: "Ogre Magi"
 type: "giant"
+cr: 5
 template: "creature"
 path: "/creature/ogre-magi"
 ---

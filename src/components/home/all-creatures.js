@@ -1,11 +1,11 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-const tidyCreatureData = edge => {
+const tidyCreatureData = (edge) => {
   return {
     name: edge.node.frontmatter.title,
     type: edge.node.frontmatter.type,
-    path: edge.node.frontmatter.path,
+    path: edge.node.frontmatter.path
   }
 }
 
@@ -32,7 +32,7 @@ const AllCreatures = () => {
 
   return (
     <div>
-      {data.creatures.edges.map(edge => {
+      {data.creatures.edges.map((edge) => {
         let creature = tidyCreatureData(edge)
         return <div>{creature.name}</div>
       })}

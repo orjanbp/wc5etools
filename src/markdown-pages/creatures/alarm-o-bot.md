@@ -1,6 +1,7 @@
 ---
 title: "Alarm-o-bot"
 type: "construct"
+cr: 0
 template: "creature"
 path: "/creature/alarm-o-bot"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Zoatroid"
 type: "aberration"
+cr: 4
 template: "creature"
 path: "/creature/zoatroid"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Mechano-tank"
 type: "construct"
+cr: 6
 template: "creature"
 path: "/creature/mechano-tank"
 ---

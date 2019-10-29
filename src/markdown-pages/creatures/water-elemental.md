@@ -1,6 +1,7 @@
 ---
 title: "Water Elemental"
 type: "elemental"
+cr: 5
 template: "creature"
 path: "/creature/water-elemental"
 ---

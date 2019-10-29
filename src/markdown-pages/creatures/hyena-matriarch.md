@@ -1,6 +1,7 @@
 ---
 title: "Hyena Matriarch"
 type: "beast"
+cr: 1
 template: "creature"
 path: "/creature/hyena-matriarch"
 ---

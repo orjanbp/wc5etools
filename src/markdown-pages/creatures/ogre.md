@@ -1,6 +1,7 @@
 ---
 title: "Ogre"
 type: "giant"
+cr: 2
 template: "creature"
 path: "/creature/ogre"
 ---

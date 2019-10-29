@@ -1,6 +1,7 @@
 ---
 title: "Wraith"
 type: "undead"
+cr: 5
 template: "creature"
 path: "/creature/wraith"
 ---

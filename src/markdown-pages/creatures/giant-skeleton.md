@@ -1,6 +1,7 @@
 ---
 title: "Giant Skeleton"
 type: "undead"
+cr: 2
 template: "creature"
 path: "/creature/giant-skeleton"
 ---

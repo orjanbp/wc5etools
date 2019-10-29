@@ -1,6 +1,7 @@
 ---
 title: "Shredder"
 type: "construct"
+cr: 3
 template: "creature"
 path: "/creature/shredder"
 ---

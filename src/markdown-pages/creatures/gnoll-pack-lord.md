@@ -1,6 +1,7 @@
 ---
 title: "Gnoll Pack Lord"
 type: "humanoid"
+cr: 3
 template: "creature"
 path: "/creature/gnoll-pack-lord"
 ---

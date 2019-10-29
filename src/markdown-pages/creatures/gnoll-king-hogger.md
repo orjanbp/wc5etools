@@ -1,6 +1,7 @@
 ---
 title: "Gnoll King Hogger"
 type: "humanoid"
+cr: 5
 template: "creature"
 path: "/creature/gnoll-king-hogger"
 ---

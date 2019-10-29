@@ -1,6 +1,7 @@
 ---
 title: "Threshadon"
 type: "beast"
+cr: 3
 template: "creature"
 path: "/creature/threshadon"
 ---

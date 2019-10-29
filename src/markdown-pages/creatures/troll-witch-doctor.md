@@ -1,6 +1,7 @@
 ---
 title: "Troll Witch Doctor"
 type: "humanoid"
+cr: 5
 template: "creature"
 path: "/creature/troll-witch-doctor"
 ---

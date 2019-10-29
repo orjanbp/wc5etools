@@ -1,6 +1,7 @@
 ---
 title: "Dark Iron Hound"
 type: "elemental"
+cr: 2
 template: "creature"
 path: "/creature/dark-iron-hound"
 ---

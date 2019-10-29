@@ -1,6 +1,7 @@
 ---
 title: "Fire Elemental"
 type: "elemental"
+cr: 5
 template: "creature"
 path: "/creature/fire-elemental"
 ---

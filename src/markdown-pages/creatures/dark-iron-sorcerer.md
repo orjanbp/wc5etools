@@ -1,6 +1,7 @@
 ---
 title: "Dark Iron Sorcerer"
 type: "humanoid"
+cr: 5
 template: "creature"
 path: "/creature/dark-iron-sorcerer"
 ---

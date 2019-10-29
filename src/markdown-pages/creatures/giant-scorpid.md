@@ -1,6 +1,7 @@
 ---
 title: "Giant Scorpid"
 type: "beast"
+cr: 3
 template: "creature"
 path: "/creature/giant-scorpid"
 ---

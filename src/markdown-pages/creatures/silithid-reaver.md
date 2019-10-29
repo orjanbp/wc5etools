@@ -1,6 +1,7 @@
 ---
 title: "Silithid Reaver"
 type: "beast"
+cr: 5
 template: "creature"
 path: "/creature/silithid-reaver"
 ---

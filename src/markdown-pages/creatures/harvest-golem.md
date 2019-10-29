@@ -1,6 +1,7 @@
 ---
 title: "Harvest Golem"
 type: "construct"
+cr: 4
 template: "creature"
 path: "/creature/harvest-golem"
 ---

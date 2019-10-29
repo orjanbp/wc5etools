@@ -1,6 +1,7 @@
 ---
 title: "Swampwalker"
 type: "plant"
+cr: 5
 template: "creature"
 path: "/creature/swampwalker"
 ---

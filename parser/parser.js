@@ -8,28 +8,30 @@ const exportpath = "src/markdown-pages/creatures"
 let isCreature = false
 let creature = []
 
-const checkCreatureUnderscore = creature => {
+const checkCreatureUnderscore = (creature) => {
   if (creature[1] === "___") {
     creature.splice(1, 1)
   }
   return creature
 }
 
-const writeFile = creature => {
+const writeFile = (creature) => {
   let file = fs.createWriteStream(`${exportpath}/${creature.slug}.md`)
   creature.md = checkCreatureUnderscore(creature.md)
 
-  console.log(creature.name, creature.type)
+  console.log([creature.name, creature.type])
 
   file.write(`---\n`)
   file.write(`title: "${creature.name}"\n`)
   file.write(`type: "${creature.type}"\n`)
+  file.write(`cr: ${creature.cr}\n`)
   file.write(`template: "creature"\n`)
   file.write(`path: "/creature/${creature.slug}"\n`)
   file.write(`---\n\n`)
 
   // Write statblock into file
-  creature.md.forEach(line => {
+  creature.md.forEach((line) => {
+    // console.log(line)
     file.write(`${line}\n`)
     if (line.indexOf("___") !== -1) {
       file.write(`>\n`)
@@ -41,10 +43,10 @@ const writeFile = creature => {
 
 const rl = readline.createInterface({
   input: fs.createReadStream(filepath),
-  crlfDelay: Infinity,
+  crlfDelay: Infinity
 })
 
-rl.on("line", line => {
+rl.on("line", (line) => {
   if (line.indexOf("___") !== -1 && line.indexOf(">") === -1) {
     addToCreature(creature, line)
     isCreature = true

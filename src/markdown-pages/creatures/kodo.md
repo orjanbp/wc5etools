@@ -1,6 +1,7 @@
 ---
 title: "Kodo"
 type: "beast"
+cr: 2
 template: "creature"
 path: "/creature/kodo"
 ---

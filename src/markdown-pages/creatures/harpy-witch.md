@@ -1,6 +1,7 @@
 ---
 title: "Harpy Witch"
 type: "humanoid"
+cr: 3
 template: "creature"
 path: "/creature/harpy-witch"
 ---

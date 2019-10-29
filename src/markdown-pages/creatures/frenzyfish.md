@@ -1,6 +1,7 @@
 ---
 title: "Frenzyfish"
 type: "beast"
+cr: 0
 template: "creature"
 path: "/creature/frenzyfish"
 ---

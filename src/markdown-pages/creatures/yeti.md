@@ -1,6 +1,7 @@
 ---
 title: "Yeti"
 type: "monstrosity"
+cr: 3
 template: "creature"
 path: "/creature/yeti"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Naga Myrmidon"
 type: "humanoid"
+cr: 3
 template: "creature"
 path: "/creature/naga-myrmidon"
 ---

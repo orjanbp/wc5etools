@@ -1,6 +1,7 @@
 ---
 title: "Ravager Wasp"
 type: "beast"
+cr: 1/4
 template: "creature"
 path: "/creature/ravager-wasp"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Shale Spider"
 type: "elemental"
+cr: 3
 template: "creature"
 path: "/creature/shale-spider"
 ---

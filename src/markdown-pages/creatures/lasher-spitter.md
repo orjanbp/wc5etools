@@ -1,6 +1,7 @@
 ---
 title: "Lasher Spitter"
 type: "plant"
+cr: 1/2
 template: "creature"
 path: "/creature/lasher-spitter"
 ---

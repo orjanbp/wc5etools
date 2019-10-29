@@ -1,6 +1,7 @@
 ---
 title: "Quilboar"
 type: "humanoid"
+cr: 1/4
 template: "creature"
 path: "/creature/quilboar"
 ---

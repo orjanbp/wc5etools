@@ -32,7 +32,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     createPage({
       path: node.frontmatter.path,
       component: creatureTemplate,
-      context: {}, // additional data can be passed via context
+      context: {} // additional data can be passed via context
     })
   })
 }

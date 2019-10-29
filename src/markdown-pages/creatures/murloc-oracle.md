@@ -1,6 +1,7 @@
 ---
 title: "Murloc Oracle"
 type: "monstrosity"
+cr: 1
 template: "creature"
 path: "/creature/murloc-oracle"
 ---

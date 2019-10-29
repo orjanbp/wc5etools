@@ -1,6 +1,7 @@
 ---
 title: "Towering Tallstrider"
 type: "beast"
+cr: 1
 template: "creature"
 path: "/creature/towering-tallstrider"
 ---

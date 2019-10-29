@@ -1,6 +1,7 @@
 ---
 title: "Wisp"
 type: "fey"
+cr: 1/2
 template: "creature"
 path: "/creature/wisp"
 ---

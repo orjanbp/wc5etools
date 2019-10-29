@@ -1,6 +1,7 @@
 ---
 title: "Moonkin"
 type: "monstrosity"
+cr: 5
 template: "creature"
 path: "/creature/moonkin"
 ---

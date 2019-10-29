@@ -1,6 +1,7 @@
 ---
 title: "Banshee"
 type: "undead"
+cr: 7
 template: "creature"
 path: "/creature/banshee"
 ---

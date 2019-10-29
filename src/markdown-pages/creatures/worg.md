@@ -1,6 +1,7 @@
 ---
 title: "Worg"
 type: "monstrosity"
+cr: 1/2
 template: "creature"
 path: "/creature/worg"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Core Hound"
 type: "elemental"
+cr: 7
 template: "creature"
 path: "/creature/core-hound"
 ---

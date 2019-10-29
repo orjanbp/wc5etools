@@ -1,6 +1,7 @@
 ---
 title: "Tar Creeper"
 type: "elemental"
+cr: 8
 template: "creature"
 path: "/creature/tar-creeper"
 ---

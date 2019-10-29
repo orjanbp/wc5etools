@@ -1,6 +1,7 @@
 ---
 title: "Spectre"
 type: "undead"
+cr: 3
 template: "creature"
 path: "/creature/spectre"
 ---

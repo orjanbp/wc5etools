@@ -1,6 +1,7 @@
 ---
 title: "Abominable Yeti"
 type: "monstrosity"
+cr: 11
 template: "creature"
 path: "/creature/abominable-yeti"
 ---

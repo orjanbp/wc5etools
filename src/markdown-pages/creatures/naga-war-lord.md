@@ -1,6 +1,7 @@
 ---
 title: "Naga War Lord"
 type: "humanoid"
+cr: 7
 template: "creature"
 path: "/creature/naga-war-lord"
 ---

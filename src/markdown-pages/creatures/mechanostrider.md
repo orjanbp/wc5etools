@@ -1,6 +1,7 @@
 ---
 title: "Mechanostrider"
 type: "construct"
+cr: 1/8
 template: "creature"
 path: "/creature/mechanostrider"
 ---

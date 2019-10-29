@@ -1,6 +1,7 @@
 ---
 title: "Lion Pridemane"
 type: "beast"
+cr: 3
 template: "creature"
 path: "/creature/lion-pridemane"
 ---

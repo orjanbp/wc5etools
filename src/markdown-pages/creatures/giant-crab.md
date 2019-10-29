@@ -1,6 +1,7 @@
 ---
 title: "Giant Crab"
 type: "beast"
+cr: 1/8
 template: "creature"
 path: "/creature/giant-crab"
 ---

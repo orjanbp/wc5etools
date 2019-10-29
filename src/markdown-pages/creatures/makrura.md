@@ -1,6 +1,7 @@
 ---
 title: "Makrura"
 type: "monstrosity"
+cr: 1
 template: "creature"
 path: "/creature/makrura"
 ---

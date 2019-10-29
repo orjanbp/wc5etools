@@ -1,6 +1,7 @@
 ---
 title: "Troll Headhunter"
 type: "humanoid"
+cr: 1
 template: "creature"
 path: "/creature/troll-headhunter"
 ---

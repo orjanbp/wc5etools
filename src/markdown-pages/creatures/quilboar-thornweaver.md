@@ -1,6 +1,7 @@
 ---
 title: "Quilboar Thornweaver"
 type: "humanoid"
+cr: 1
 template: "creature"
 path: "/creature/quilboar-thornweaver"
 ---

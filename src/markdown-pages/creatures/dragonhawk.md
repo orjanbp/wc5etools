@@ -1,6 +1,7 @@
 ---
 title: "Dragonhawk"
 type: "beast"
+cr: 4
 template: "creature"
 path: "/creature/dragonhawk"
 ---

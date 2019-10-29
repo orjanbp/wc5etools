@@ -1,6 +1,7 @@
 ---
 title: "Ice Elemental"
 type: "elemental"
+cr: 5
 template: "creature"
 path: "/creature/ice-elemental"
 ---

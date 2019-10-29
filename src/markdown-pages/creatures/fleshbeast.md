@@ -1,6 +1,7 @@
 ---
 title: "Fleshbeast"
 type: "aberration"
+cr: 2
 template: "creature"
 path: "/creature/fleshbeast"
 ---

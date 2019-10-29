@@ -1,6 +1,7 @@
 ---
 title: "Ghoul"
 type: "undead"
+cr: 1
 template: "creature"
 path: "/creature/ghoul"
 ---

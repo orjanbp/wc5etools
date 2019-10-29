@@ -1,6 +1,7 @@
 ---
 title: "Bombling"
 type: "construct"
+cr: 1/8
 template: "creature"
 path: "/creature/bombling"
 ---

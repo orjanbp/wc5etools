@@ -1,6 +1,7 @@
 ---
 title: "Dust Devil"
 type: "elemental"
+cr: 2
 template: "creature"
 path: "/creature/dust-devil"
 ---

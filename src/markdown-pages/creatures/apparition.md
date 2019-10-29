@@ -1,6 +1,7 @@
 ---
 title: "Apparition"
 type: "undead"
+cr: 2
 template: "creature"
 path: "/creature/apparition"
 ---

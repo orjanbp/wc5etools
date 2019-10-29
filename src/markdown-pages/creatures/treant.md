@@ -1,6 +1,7 @@
 ---
 title: "Treant"
 type: "plant"
+cr: 2
 template: "creature"
 path: "/creature/treant"
 ---

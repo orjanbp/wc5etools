@@ -1,6 +1,7 @@
 ---
 title: "Skeleton Mage"
 type: "undead"
+cr: 2
 template: "creature"
 path: "/creature/skeleton-mage"
 ---

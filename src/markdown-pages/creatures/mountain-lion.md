@@ -1,6 +1,7 @@
 ---
 title: "Mountain Lion"
 type: "beast"
+cr: 1/2
 template: "creature"
 path: "/creature/mountain-lion"
 ---

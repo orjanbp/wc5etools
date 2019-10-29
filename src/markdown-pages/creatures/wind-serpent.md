@@ -1,6 +1,7 @@
 ---
 title: "Wind Serpent"
 type: "beast"
+cr: 1
 template: "creature"
 path: "/creature/wind-serpent"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Thunder Lizard"
 type: "monstrosity"
+cr: 7
 template: "creature"
 path: "/creature/thunder-lizard"
 ---

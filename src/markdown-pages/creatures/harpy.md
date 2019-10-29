@@ -1,6 +1,7 @@
 ---
 title: "Harpy"
 type: "humanoid"
+cr: 1
 template: "creature"
 path: "/creature/harpy"
 ---

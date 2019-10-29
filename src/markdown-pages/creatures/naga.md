@@ -1,6 +1,7 @@
 ---
 title: "Naga"
 type: "humanoid"
+cr: 1/2
 template: "creature"
 path: "/creature/naga"
 ---

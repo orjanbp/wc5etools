@@ -1,6 +1,7 @@
 ---
 title: "Naga Brute"
 type: "monstrosity"
+cr: 9
 template: "creature"
 path: "/creature/naga-brute"
 ---

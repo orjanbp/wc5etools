@@ -1,6 +1,7 @@
 ---
 title: "Mana Wyrm"
 type: "elemental"
+cr: 1/4
 template: "creature"
 path: "/creature/mana-wyrm"
 ---

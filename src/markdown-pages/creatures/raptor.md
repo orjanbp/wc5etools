@@ -1,6 +1,7 @@
 ---
 title: "Raptor"
 type: "beast"
+cr: 1
 template: "creature"
 path: "/creature/raptor"
 ---

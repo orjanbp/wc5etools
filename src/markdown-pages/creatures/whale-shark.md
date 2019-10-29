@@ -1,6 +1,7 @@
 ---
 title: "Whale Shark"
 type: "beast"
+cr: 19
 template: "creature"
 path: "/creature/whale-shark"
 ---

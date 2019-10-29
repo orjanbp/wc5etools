@@ -1,6 +1,7 @@
 ---
 title: "Makrura Tidecaller"
 type: "monstrosity"
+cr: 3
 template: "creature"
 path: "/creature/makrura-tidecaller"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Ghost Knight"
 type: "undead"
+cr: 3
 template: "creature"
 path: "/creature/ghost-knight"
 ---

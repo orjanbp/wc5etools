@@ -1,6 +1,7 @@
 ---
 title: "Ancient of Lore"
 type: "plant"
+cr: 7
 template: "creature"
 path: "/creature/ancient-of-lore"
 ---

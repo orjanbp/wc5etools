@@ -1,6 +1,7 @@
 ---
 title: "Zombie"
 type: "undead"
+cr: 1/4
 template: "creature"
 path: "/creature/zombie"
 ---

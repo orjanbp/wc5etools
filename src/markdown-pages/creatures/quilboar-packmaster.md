@@ -1,6 +1,7 @@
 ---
 title: "Quilboar Packmaster"
 type: "humanoid"
+cr: 1/2
 template: "creature"
 path: "/creature/quilboar-packmaster"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Trogg Ambusher"
 type: "humanoid"
+cr: 2
 template: "creature"
 path: "/creature/trogg-ambusher"
 ---

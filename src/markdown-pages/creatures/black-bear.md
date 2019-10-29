@@ -1,6 +1,7 @@
 ---
 title: "Black Bear"
 type: "beast"
+cr: 1/2
 template: "creature"
 path: "/creature/black-bear"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Thistleshrub"
 type: "plant"
+cr: 4
 template: "creature"
 path: "/creature/thistleshrub"
 ---

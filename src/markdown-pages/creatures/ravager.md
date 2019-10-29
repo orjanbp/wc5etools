@@ -1,6 +1,7 @@
 ---
 title: "Ravager"
 type: "beast"
+cr: 1
 template: "creature"
 path: "/creature/ravager"
 ---

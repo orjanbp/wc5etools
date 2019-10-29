@@ -1,6 +1,7 @@
 ---
 title: "Arcane Elemental"
 type: "elemental"
+cr: 5
 template: "creature"
 path: "/creature/arcane-elemental"
 ---

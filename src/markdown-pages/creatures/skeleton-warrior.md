@@ -1,6 +1,7 @@
 ---
 title: "Skeleton Warrior"
 type: "undead"
+cr: 1
 template: "creature"
 path: "/creature/skeleton-warrior"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Swarm of Frenzyfish"
 type: "swarm"
+cr: 1
 template: "creature"
 path: "/creature/swarm-of-frenzyfish"
 ---

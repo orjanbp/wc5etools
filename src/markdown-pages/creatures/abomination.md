@@ -1,6 +1,7 @@
 ---
 title: "Abomination"
 type: "construct"
+cr: 7
 template: "creature"
 path: "/creature/abomination"
 ---

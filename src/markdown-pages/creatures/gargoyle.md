@@ -1,6 +1,7 @@
 ---
 title: "Gargoyle"
 type: "monstrosity"
+cr: 2
 template: "creature"
 path: "/creature/gargoyle"
 ---

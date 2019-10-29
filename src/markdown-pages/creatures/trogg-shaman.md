@@ -1,6 +1,7 @@
 ---
 title: "Trogg Shaman"
 type: "humanoid"
+cr: 3
 template: "creature"
 path: "/creature/trogg-shaman"
 ---

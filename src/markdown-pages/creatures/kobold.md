@@ -1,6 +1,7 @@
 ---
 title: "Kobold"
 type: "humanoid"
+cr: 1/8
 template: "creature"
 path: "/creature/kobold"
 ---

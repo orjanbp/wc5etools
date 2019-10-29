@@ -1,6 +1,7 @@
 ---
 title: "Silithid Worker"
 type: "beast"
+cr: 1
 template: "creature"
 path: "/creature/silithid-worker"
 ---

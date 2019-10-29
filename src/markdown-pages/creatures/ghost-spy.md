@@ -1,6 +1,7 @@
 ---
 title: "Ghost Spy"
 type: "undead"
+cr: 1
 template: "creature"
 path: "/creature/ghost-spy"
 ---

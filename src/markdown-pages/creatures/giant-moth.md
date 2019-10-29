@@ -1,6 +1,7 @@
 ---
 title: "Giant Moth"
 type: "beast"
+cr: 1/2
 template: "creature"
 path: "/creature/giant-moth"
 ---

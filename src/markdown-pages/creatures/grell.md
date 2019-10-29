@@ -1,6 +1,7 @@
 ---
 title: "Grell"
 type: "fey"
+cr: 1/4
 template: "creature"
 path: "/creature/grell"
 ---

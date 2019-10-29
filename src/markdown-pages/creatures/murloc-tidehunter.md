@@ -1,6 +1,7 @@
 ---
 title: "Murloc Tidehunter"
 type: "monstrosity"
+cr: 1/4
 template: "creature"
 path: "/creature/murloc-tidehunter"
 ---

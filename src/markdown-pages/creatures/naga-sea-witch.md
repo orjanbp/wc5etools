@@ -1,6 +1,7 @@
 ---
 title: "Naga Sea Witch"
 type: "humanoid"
+cr: 4
 template: "creature"
 path: "/creature/naga-sea-witch"
 ---

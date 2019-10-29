@@ -1,6 +1,7 @@
 ---
 title: "Barbed Orchid"
 type: "plant"
+cr: 1
 template: "creature"
 path: "/creature/barbed-orchid"
 ---

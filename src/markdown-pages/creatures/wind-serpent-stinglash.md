@@ -1,6 +1,7 @@
 ---
 title: "Wind Serpent Stinglash"
 type: "beast"
+cr: 2
 template: "creature"
 path: "/creature/wind-serpent-stinglash"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "Leper Gnome"
 type: "humanoid"
+cr: 1/4
 template: "creature"
 path: "/creature/leper-gnome"
 ---
