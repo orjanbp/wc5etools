@@ -9,11 +9,11 @@ import AllCreatures from "../components/home/all-creatures"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h3>[Creature type filter placeholder]</h3>
+    <h5>[Creature type filter placeholder]</h5>
 
-    <h3>[Creature sort by placeholder]</h3>
+    <h5>[Creature sort by placeholder]</h5>
 
-    <h3>[Creature jump to placeholder]</h3>
+    <h5>[Creature jump to placeholder]</h5>
 
     <div>
       <AllCreatures />

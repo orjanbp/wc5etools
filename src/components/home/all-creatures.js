@@ -1,6 +1,8 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import _ from "lodash"
+
+import CreatureLink from '../creature/creature-link'
 
 const tidyCreatureData = (creatures) => {
   return _.map(creatures, (creature) => {
@@ -56,21 +58,18 @@ const AllCreatures = () => {
   let creaturesByCR = getCreaturesByCR(creatureData)
 
   return (
-    <div>
+    <>
       {_.keys(creaturesByCR)
         .sort((a, b) => a - b)
         .map((category) => (
-          <>
-            <div style={{ marginTop: 64 }}></div>
-            <h3>{creaturesByCR[category].cr}</h3>
+          <div style={{ marginTop: 64 }}>
+            <h5>Challenge Rating {creaturesByCR[category].cr}</h5>
             {_.map(creaturesByCR[category].creatures, (creature) => (
-              <div>
-                <Link to={creature.path}>{creature.name}</Link>
-              </div>
+              <CreatureLink creature={creature} />
             ))}
-          </>
+          </div>
         ))}
-    </div>
+    </>
   )
 
   //   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
