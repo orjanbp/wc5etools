@@ -1,7 +1,8 @@
 ---
 title: "Ogre Lord"
 type: "giant"
-cr: 7
+cr: "7"
+crDecimal: "7"
 template: "creature"
 path: "/creature/ogre-lord"
 ---

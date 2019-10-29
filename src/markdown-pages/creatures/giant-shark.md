@@ -1,7 +1,8 @@
 ---
 title: "Giant Shark"
 type: "beast"
-cr: 5
+cr: "5"
+crDecimal: "5"
 template: "creature"
 path: "/creature/giant-shark"
 ---

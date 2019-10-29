@@ -1,7 +1,8 @@
 ---
 title: "Air Elemental"
 type: "elemental"
-cr: 5
+cr: "5"
+crDecimal: "5"
 template: "creature"
 path: "/creature/air-elemental"
 ---

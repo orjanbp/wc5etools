@@ -1,7 +1,8 @@
 ---
 title: "Dark Iron Overseer"
 type: "humanoid"
-cr: 7
+cr: "7"
+crDecimal: "7"
 template: "creature"
 path: "/creature/dark-iron-overseer"
 ---

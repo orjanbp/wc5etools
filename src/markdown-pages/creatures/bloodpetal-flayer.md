@@ -1,7 +1,8 @@
 ---
 title: "Bloodpetal Flayer"
 type: "plant"
-cr: 2
+cr: "2"
+crDecimal: "2"
 template: "creature"
 path: "/creature/bloodpetal-flayer"
 ---

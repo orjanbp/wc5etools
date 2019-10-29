@@ -1,7 +1,8 @@
 ---
 title: "Satyr"
 type: "monstrosity"
-cr: 1/2
+cr: "1/2"
+crDecimal: "0.5"
 template: "creature"
 path: "/creature/satyr"
 ---

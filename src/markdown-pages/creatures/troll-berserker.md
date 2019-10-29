@@ -1,7 +1,8 @@
 ---
 title: "Troll Berserker"
 type: "humanoid"
-cr: 3
+cr: "3"
+crDecimal: "3"
 template: "creature"
 path: "/creature/troll-berserker"
 ---

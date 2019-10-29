@@ -1,7 +1,8 @@
 ---
 title: "Dark Iron Sorcerer"
 type: "humanoid"
-cr: 5
+cr: "5"
+crDecimal: "5"
 template: "creature"
 path: "/creature/dark-iron-sorcerer"
 ---

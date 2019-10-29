@@ -1,7 +1,8 @@
 ---
 title: "Basilisk"
 type: "monstrosity"
-cr: 3
+cr: "3"
+crDecimal: "3"
 template: "creature"
 path: "/creature/basilisk"
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Arcane Golem"
 type: "construct"
-cr: 8
+cr: "8"
+crDecimal: "8"
 template: "creature"
 path: "/creature/arcane-golem"
 ---

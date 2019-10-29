@@ -1,7 +1,8 @@
 ---
 title: "Ravager Brood Mother"
 type: "beast"
-cr: 4
+cr: "4"
+crDecimal: "4"
 template: "creature"
 path: "/creature/ravager-brood-mother"
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Coyote"
 type: "beast"
-cr: 1/8
+cr: "1/8"
+crDecimal: "0.125"
 template: "creature"
 path: "/creature/coyote"
 ---

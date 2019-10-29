@@ -1,7 +1,8 @@
 ---
 title: "Ancient Protector"
 type: "plant"
-cr: 6
+cr: "6"
+crDecimal: "6"
 template: "creature"
 path: "/creature/ancient-protector"
 ---

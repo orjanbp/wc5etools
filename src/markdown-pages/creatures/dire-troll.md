@@ -1,7 +1,8 @@
 ---
 title: "Dire Troll"
 type: "humanoid"
-cr: 8
+cr: "8"
+crDecimal: "8"
 template: "creature"
 path: "/creature/dire-troll"
 ---

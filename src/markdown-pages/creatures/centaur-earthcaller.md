@@ -1,7 +1,8 @@
 ---
 title: "Centaur Earthcaller"
 type: "humanoid"
-cr: 4
+cr: "4"
+crDecimal: "4"
 template: "creature"
 path: "/creature/centaur-earthcaller"
 ---

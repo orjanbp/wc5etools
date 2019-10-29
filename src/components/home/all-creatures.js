@@ -1,12 +1,32 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+import _ from "lodash"
 
-const tidyCreatureData = (edge) => {
-  return {
-    name: edge.node.frontmatter.title,
-    type: edge.node.frontmatter.type,
-    path: edge.node.frontmatter.path
-  }
+const tidyCreatureData = (creatures) => {
+  return _.map(creatures, (creature) => {
+    return {
+      id: creature.node.id,
+      ...creature.node.frontmatter
+    }
+  })
+}
+
+const getCreaturesByCR = (creatures) => {
+  let creaturesByCR = {}
+
+  creatures.map((creature) => {
+    let decimal = creature.crDecimal.toString()
+    if (!creaturesByCR[decimal]) {
+      creaturesByCR[decimal] = {
+        cr: creature.cr,
+        crDecimal: decimal,
+        creatures: []
+      }
+    }
+    creaturesByCR[decimal].creatures.push(creature)
+  })
+
+  return creaturesByCR
 }
 
 const AllCreatures = () => {
@@ -19,8 +39,10 @@ const AllCreatures = () => {
           node {
             id
             frontmatter {
-              title
+              name: title
               type
+              cr
+              crDecimal
               template
               path
             }
@@ -30,12 +52,24 @@ const AllCreatures = () => {
     }
   `)
 
+  let creatureData = tidyCreatureData(data.creatures.edges)
+  let creaturesByCR = getCreaturesByCR(creatureData)
+
   return (
     <div>
-      {data.creatures.edges.map((edge) => {
-        let creature = tidyCreatureData(edge)
-        return <div>{creature.name}</div>
-      })}
+      {_.keys(creaturesByCR)
+        .sort((a, b) => a - b)
+        .map((category) => (
+          <>
+            <div style={{ marginTop: 64 }}></div>
+            <h3>{creaturesByCR[category].cr}</h3>
+            {_.map(creaturesByCR[category].creatures, (creature) => (
+              <div>
+                <Link to={creature.path}>{creature.name}</Link>
+              </div>
+            ))}
+          </>
+        ))}
     </div>
   )
 

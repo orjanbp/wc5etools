@@ -1,7 +1,8 @@
 ---
 title: "Scourge Risen Knight"
 type: "undead"
-cr: 3
+cr: "3"
+crDecimal: "3"
 template: "creature"
 path: "/creature/scourge-risen-knight"
 ---

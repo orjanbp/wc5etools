@@ -1,7 +1,8 @@
 ---
 title: "Ashwing Moth"
 type: "beast"
-cr: 0
+cr: "0"
+crDecimal: "0"
 template: "creature"
 path: "/creature/ashwing-moth"
 ---

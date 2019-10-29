@@ -1,7 +1,8 @@
 ---
 title: "Skeleton"
 type: "undead"
-cr: 1/4
+cr: "1/4"
+crDecimal: "0.25"
 template: "creature"
 path: "/creature/skeleton"
 ---

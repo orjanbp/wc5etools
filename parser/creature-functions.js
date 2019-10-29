@@ -32,6 +32,17 @@ const getCreatureCR = (creature) => {
     .replace(/ /g, "")
 }
 
+const getCreatureCRDecimal = (cr) => {
+  let crDecimal = cr
+  if (cr == "1/8") crDecimal = 0.125
+  if (cr == "1/4") crDecimal = 0.25
+  if (cr == "1/2") crDecimal = 0.5
+
+  return crDecimal
+}
+
+const crToDecimal = (cr) => {}
+
 const getCreatureSlug = (name) => {
   return name
     .toLowerCase()
@@ -43,15 +54,13 @@ const exportCreature = (creature) => {
   let name = getCreatureName(creature)
   let type = getCreatureType(creature)
   let cr = getCreatureCR(creature)
-  let slug = getCreatureSlug(name)
-
-  console.log(getCreatureCR(creature))
 
   return {
     name: name,
     type: type,
     cr: cr,
-    slug: slug,
+    crDecimal: getCreatureCRDecimal(cr),
+    slug: getCreatureSlug(name),
     md: creature
   }
 }

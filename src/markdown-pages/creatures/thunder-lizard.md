@@ -1,7 +1,8 @@
 ---
 title: "Thunder Lizard"
 type: "monstrosity"
-cr: 7
+cr: "7"
+crDecimal: "7"
 template: "creature"
 path: "/creature/thunder-lizard"
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Satyr Trickster"
 type: "monstrosity"
-cr: 1
+cr: "1"
+crDecimal: "1"
 template: "creature"
 path: "/creature/satyr-trickster"
 ---

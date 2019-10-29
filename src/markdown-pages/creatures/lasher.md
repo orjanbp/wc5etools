@@ -1,7 +1,8 @@
 ---
 title: "Lasher"
 type: "plant"
-cr: 1/8
+cr: "1/8"
+crDecimal: "0.125"
 template: "creature"
 path: "/creature/lasher"
 ---

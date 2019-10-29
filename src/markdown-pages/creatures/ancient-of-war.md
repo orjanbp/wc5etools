@@ -1,7 +1,8 @@
 ---
 title: "Ancient of War"
 type: "plant"
-cr: 9
+cr: "9"
+crDecimal: "9"
 template: "creature"
 path: "/creature/ancient-of-war"
 ---

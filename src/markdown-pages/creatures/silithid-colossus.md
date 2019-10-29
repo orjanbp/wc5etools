@@ -1,7 +1,8 @@
 ---
 title: "Silithid Colossus"
 type: "beast"
-cr: 9
+cr: "9"
+crDecimal: "9"
 template: "creature"
 path: "/creature/silithid-colossus"
 ---

@@ -1,7 +1,8 @@
 ---
 title: "Dark Iron Herald"
 type: "humanoid"
-cr: 10
+cr: "10"
+crDecimal: "10"
 template: "creature"
 path: "/creature/dark-iron-herald"
 ---

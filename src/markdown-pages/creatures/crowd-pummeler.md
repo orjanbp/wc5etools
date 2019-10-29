@@ -1,7 +1,8 @@
 ---
 title: "Crowd Pummeler"
 type: "construct"
-cr: 3
+cr: "3"
+crDecimal: "3"
 template: "creature"
 path: "/creature/crowd-pummeler"
 ---

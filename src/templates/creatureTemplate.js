@@ -10,8 +10,8 @@ export default function Template({
   return (
     <div className="">
       <div className="">
-        <h1>{frontmatter.title}</h1>
-        <h3>{frontmatter.type}</h3>
+        {/* <h1>{frontmatter.title}</h1>
+        <h3>{frontmatter.type}</h3> */}
         <div className="" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </div>
