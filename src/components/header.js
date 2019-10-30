@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const HeaderBar = styled.header`
   display: flex;
@@ -13,26 +14,41 @@ const HeaderBar = styled.header`
 
 const HeaderBarLeft = styled.div`
   align-self: center;
-  font-weight: 600;
+
+  & a {
+    color: #f4d03e;
+    font-weight: 600;
+    text-decoration: none;
+  }
 `
 
 const HeaderBarRight = styled.div`
   align-self: center;
-  font-size: 12px;
-`
+  font-size: 1.4rem;
 
-const HeaderLink = styled(Link)`
-  color: #f4d03e;
-  text-decoration: none;
+  & svg {
+    font-size: 2.4rem;
+    margin-left: 8px;
+  }
+
+  & * {
+    vertical-align: middle;
+    color: #f4d03e;
+    font-weight: 400;
+    text-decoration: none;
+  }
 `
 
 const Header = () => (
   <HeaderBar>
     <HeaderBarLeft>
-      <HeaderLink to="/">WC5E Bestiary</HeaderLink>
+      <Link to="/">WC5E Bestiary</Link>
     </HeaderBarLeft>
     <HeaderBarRight>
-      <HeaderLink>Github</HeaderLink>
+      <a href="https://github.com/orjanbp/wc5ebestiary">
+        <span>Github</span>
+        <FontAwesomeIcon icon={["fab", "github"]} />
+      </a>
     </HeaderBarRight>
   </HeaderBar>
 )
