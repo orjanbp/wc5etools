@@ -1,5 +1,4 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 
@@ -14,39 +13,28 @@ const HeaderBar = styled.header`
 
 const HeaderBarLeft = styled.div`
   align-self: center;
-
-  & span {
-    color: #F4D03E;
-    font-weight: 600;
-  }
+  font-weight: 600;
 `
 
 const HeaderBarRight = styled.div`
   align-self: center;
-
-  & span {
-    color: #F4D03E;
-    font-size: 12px;
-  }
+  font-size: 12px;
 `
 
-const Header = ({ siteTitle }) => (
+const HeaderLink = styled(Link)`
+  color: #f4d03e;
+  text-decoration: none;
+`
+
+const Header = () => (
   <HeaderBar>
     <HeaderBarLeft>
-      <span>WC5E Bestiary</span>
+      <HeaderLink to="/">WC5E Bestiary</HeaderLink>
     </HeaderBarLeft>
     <HeaderBarRight>
-      <span>Github</span>
+      <HeaderLink>Github</HeaderLink>
     </HeaderBarRight>
   </HeaderBar>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-}
-
-Header.defaultProps = {
-  siteTitle: ``
-}
 
 export default Header

@@ -5,11 +5,13 @@ import _ from "lodash"
 
 const CreatureLink = styled(Link)`
   display: flex;
+  justify-content: space-between;
+  background-color: #fbfaf9;
   padding: 20px 32px;
   margin-bottom: 8px;
-  justify-content: space-between;
-  border: 1px solid #dedede;
+  border: 1px solid #ede3d4;
   border-radius: 2px;
+  color: #2c3e50;
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
 
@@ -27,7 +29,7 @@ const CreatureLinkLeft = styled.div`
 const CreatureLinkRight = styled.div`
   & span {
     margin-left: 24px;
-    color: #A7ADB4;
+    color: #a7adb4;
     font-size: 12px;
   }
 `
