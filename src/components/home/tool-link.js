@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 const ToolLink = styled(Link)`
   background-color: #fbfaf9;
-  padding: 20px 32px;
+  padding: 32px;
   border: 1px solid #ede3d4;
   border-radius: 2px;
   color: #2c3e50;
@@ -14,6 +14,14 @@ const ToolLink = styled(Link)`
 
   &:hover {
     background-color: #fafafa;
+  }
+
+  & h3 {
+    margin-top: 0px;
+  }
+
+  & p {
+    margin-bottom: 0px;
   }
 `
 
