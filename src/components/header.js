@@ -21,8 +21,9 @@ const HeaderBarLeft = styled.div`
     text-decoration: none;
     padding: 12px 16px;
 
-    &:hover, &:focus {
-      color: #F9E99D;
+    &:hover,
+    &:focus {
+      color: #faecb1;
     }
   }
 `
@@ -43,13 +44,13 @@ const HeaderBarRight = styled.div`
     font-weight: 400;
     text-decoration: none;
     vertical-align: middle;
+    border-radius: 2px;
 
-    &:hover,
-    &:focus {
-      color: #f7df77;
+    &:hover {
+      color: #faecb1;
 
       & svg {
-        color: #F9E99D;
+        color: #faecb1;
       }
     }
   }
