@@ -45,6 +45,8 @@ h2 {
   font-size: 3.6rem;
   line-height: 1.25;
   letter-spacing: -0.1rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
 }
 
 h3 {
@@ -57,6 +59,7 @@ h3 {
 
 p {
   margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* Phablet font sizes */
@@ -180,17 +183,8 @@ pre>code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 th, td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-th:first-child, td:first-child {
-  padding-left: 0;
-}
-
-th:last-child, td:last-child {
-  padding-right: 0;
+  padding: 8px 12px;
+  text-align: center;
 }
 
 /* Spacing
@@ -204,7 +198,7 @@ input, textarea, select, fieldset {
   margin-bottom: 1.5rem;
 }
 
-pre, blockquote, dl, figure, table, p, ul, ol, form {
+pre, blockquote, dl, figure, table, ul, ol, form {
   margin-bottom: 2.5rem;
 }
 

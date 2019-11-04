@@ -3,13 +3,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import _ from "lodash"
 import styled from "styled-components"
 
-import CreatureListItem from "./creature-list-item"
+import CreatureListItem from "../creature/creature-list-item"
 
 const CreatureListLabel = styled.h3`
   color: #c0392b;
 `
 
 const CreatureListGroup = styled.div`
+  width: 100%;
   padding-top: 64px;
 `
 
