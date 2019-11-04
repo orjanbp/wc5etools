@@ -4,7 +4,7 @@ const { addToCreature, exportCreature } = require("./creature-functions")
 const _ = require("lodash")
 
 const filepath = "parser/data/stats.txt"
-const exportpath = "src/markdown-pages/creatures"
+const exportpath = "src/markdown-pages/bestiary"
 let isCreature = false
 let creature = []
 
@@ -27,7 +27,7 @@ const writeFile = (creature) => {
   file.write(`cr: "${creature.cr}"\n`)
   file.write(`crDecimal: "${creature.crDecimal}"\n`)
   file.write(`template: "creature"\n`)
-  file.write(`path: "/creature/${creature.slug}"\n`)
+  file.write(`path: "/bestiary/${creature.slug}"\n`)
   file.write(`---\n\n`)
 
   // Write statblock into file
