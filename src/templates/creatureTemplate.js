@@ -12,12 +12,7 @@ export default function Template({
 
   return (
     <Layout>
-      <CreatureStatblock>
-        <div
-          class="creature-statblock"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </CreatureStatblock>
+      <CreatureStatblock html={html} />
     </Layout>
   )
 }
