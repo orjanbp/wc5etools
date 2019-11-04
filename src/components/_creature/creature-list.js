@@ -34,7 +34,7 @@ const CreatureLinkRight = styled.div`
   }
 `
 
-const CreautreListItem = ({ creature }) => (
+const CreatureListItem = ({ creature }) => (
   <CreatureLink to={creature.path}>
     <CreatureLinkLeft>
       <span>{creature.name}</span>
@@ -46,4 +46,16 @@ const CreautreListItem = ({ creature }) => (
   </CreatureLink>
 )
 
-export default CreautreListItem
+const CreatureListGroup = styled.div`
+  width: 100%;
+
+  & + & {
+    padding-top: 64px;
+  }
+
+  & h3 {
+    color: #c0392b;
+  }
+`
+
+export { CreatureListGroup, CreatureListItem }

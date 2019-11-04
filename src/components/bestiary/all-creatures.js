@@ -1,21 +1,8 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import _ from "lodash"
-import styled from "styled-components"
 
-import CreatureListItem from "../creature-list-item"
-
-const CreatureListLabel = styled.h3`
-  color: #c0392b;
-`
-
-const CreatureListGroup = styled.div`
-  width: 100%;
-
-  & + & {
-    padding-top: 64px;
-  }
-`
+import { CreatureListGroup, CreatureListItem } from "../_creature/creature-list"
 
 const tidyCreatureData = (creatures) => {
   return _.map(creatures, (creature) => {
@@ -76,9 +63,7 @@ const AllCreatures = () => {
         .sort((a, b) => a - b)
         .map((category) => (
           <CreatureListGroup>
-            <CreatureListLabel>
-              Challenge Rating {creaturesByCR[category].cr}
-            </CreatureListLabel>
+            <h3>Challenge Rating {creaturesByCR[category].cr}</h3>
             {_.map(creaturesByCR[category].creatures, (creature) => (
               <CreatureListItem creature={creature} />
             ))}

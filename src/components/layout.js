@@ -12,8 +12,8 @@ import Header from "./header"
 import Footer from "./footer"
 import backgroundLight from "../images/background-light.png"
 
-import "./css/normalize.css"
-import "./css/layout.css"
+import "./_css/normalize.css"
+import "./_css/layout.css"
 
 console.log(backgroundLight)
 
