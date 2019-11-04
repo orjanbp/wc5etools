@@ -40,14 +40,14 @@ ___
 >
 > ***Spellcasting.*** The dwarf is a 14th-level spellcaster. Its spellcasting ability is Intelligence (save DC 15, +7 to hit with spell attacks). The dwarf has the following mage spells prepared:
 >
-> Cantrips (at will): *control flames, fire bolt, mage hand, <br>&nbsp;&nbsp;&nbsp; minor illusion, prestidigitation*
+> Cantrips (at will): *control flames, fire bolt, mage hand, minor illusion, prestidigitation*
 >
-> 1st level (4 slots): *burning hands, hellish rebuke, <br>&nbsp;&nbsp;&nbsp; mage armor, sudden awakening*
-> <br> 2nd level (3 slots): *aganazzar's scorcher, continual <br>&nbsp;&nbsp;&nbsp; flame, flaming sphere, hold person*
+> 1st level (4 slots): *burning hands, hellish rebuke, mage armor, sudden awakening*
+> <br> 2nd level (3 slots): *aganazzar's scorcher, continual flame, flaming sphere, hold person*
 > <br> 3rd level (3 slots): *counterspell, fireball, slow*
-> <br> 4th level (3 slots): *confusion, fire shield**, *wall of fire*
+> <br> 4th level (3 slots): *confusion, fire shield*\*, *wall of fire*
 > <br> 5th level (2 slots): *dominate person, immolation*
-> <br> 6th level (1 slot): *investiture of flame**
+> <br> 6th level (1 slot): *investiture of flame*\*
 >
 > **The dwarf casts these spells on itself before combat.*
 >
@@ -64,4 +64,4 @@ ___
 > The dwarf can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dwarf regains spent legendary actions at the start of its turn.
 >
 > **Attack.** The dwarf makes one melee weapon attack.
-> <br> **Spell (Costs 2 Actions).** The dwarf casts a spell from its <br>&nbsp;&nbsp;&nbsp; prepared spell list.
+> <br> **Spell (Costs 2 Actions).** The dwarf casts a spell from its prepared spell list.

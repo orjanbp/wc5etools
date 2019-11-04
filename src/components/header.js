@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const HeaderBar = styled.header`
   display: flex;
   height: 64px;
-  padding: 0px 48px;
+  padding: 0px 32px;
   background-color: #373737;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
   justify-content: space-between;
@@ -19,6 +19,11 @@ const HeaderBarLeft = styled.div`
     color: #f4d03e;
     font-weight: 600;
     text-decoration: none;
+    padding: 12px 16px;
+
+    &:hover, &:focus {
+      color: #F9E99D;
+    }
   }
 `
 
@@ -29,25 +34,41 @@ const HeaderBarRight = styled.div`
   & svg {
     font-size: 2.4rem;
     margin-left: 8px;
+    vertical-align: middle;
   }
 
-  & * {
-    vertical-align: middle;
+  & a {
+    padding: 12px 16px;
     color: #f4d03e;
     font-weight: 400;
     text-decoration: none;
+    vertical-align: middle;
+
+    &:hover,
+    &:focus {
+      color: #f7df77;
+
+      & svg {
+        color: #F9E99D;
+      }
+    }
   }
 `
 
 const Header = () => (
   <HeaderBar>
     <HeaderBarLeft>
-      <Link to="/">WC5E Bestiary</Link>
+      <Link to="/">WC5E Tools</Link>
     </HeaderBarLeft>
     <HeaderBarRight>
+      <Link to="/bestiary">Bestiary</Link>
       <a href="https://github.com/orjanbp/wc5ebestiary">
-        <span>Github</span>
+        Github
         <FontAwesomeIcon icon={["fab", "github"]} />
+      </a>
+      <a href="https://www.reddit.com/r/wc5e/">
+        Reddit
+        <FontAwesomeIcon icon={["fab", "reddit"]} />
       </a>
     </HeaderBarRight>
   </HeaderBar>

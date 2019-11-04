@@ -5,10 +5,11 @@ import SEO from "../components/seo"
 
 import AllCreatures from "../components/home/all-creatures"
 
-const IndexPage = () => (
+const BestiaryPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Bestiary" />
+    <AllCreatures />
   </Layout>
 )
 
-export default IndexPage
+export default BestiaryPage

@@ -18,13 +18,20 @@ console.log(backgroundLight)
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh"
+      }}
+    >
       <Header />
       <div
         style={{
           backgroundColor: "#F4F1EB",
           backgroundImage: `url(${backgroundLight})`,
-          backgroundPosition: 'center center'
+          backgroundPosition: "center center",
+          flexGrow: 1
         }}
       >
         <main
@@ -43,7 +50,7 @@ const Layout = ({ children }) => {
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
-    </>
+    </div>
   )
 }
 
