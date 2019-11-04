@@ -23,31 +23,26 @@ const Layout = ({ children }) => {
       style={{
         display: "flex",
         flexDirection: "column",
-        minHeight: "100vh"
+        minHeight: "100vh",
+        backgroundColor: "#F4F1EB",
+        backgroundImage: `url(${backgroundLight})`,
+        backgroundPosition: "center center"
       }}
     >
       <Header />
-      <div
+      <main
         style={{
-          backgroundColor: "#F4F1EB",
-          backgroundImage: `url(${backgroundLight})`,
-          backgroundPosition: "center center",
           flexGrow: 1,
+          margin: `0 auto`,
+          width: "100%",
+          maxWidth: 960,
+          padding: `0px 1.0875rem 1.45rem`,
           paddingTop: 64,
           paddingBottom: 64
         }}
       >
-        <main
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0
-          }}
-        >
-          {children}
-        </main>
-      </div>
+        {children}
+      </main>
       <Footer />
     </div>
   )

@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import CreatureReturn from "../components/_creature/creature-return"
 import CreatureStatblock from "../components/_creature/creature-statblock"
 
 export default function Template({
@@ -12,6 +13,7 @@ export default function Template({
 
   return (
     <Layout>
+      <CreatureReturn />
       <CreatureStatblock html={html} />
     </Layout>
   )

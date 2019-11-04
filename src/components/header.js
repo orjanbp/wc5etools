@@ -1,6 +1,6 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const HeaderBar = styled.header`
