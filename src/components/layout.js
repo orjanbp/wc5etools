@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
+import Footer from "./footer"
 import backgroundLight from "../images/background-light.png"
 
 import "./css/normalize.css"
@@ -31,7 +32,9 @@ const Layout = ({ children }) => {
           backgroundColor: "#F4F1EB",
           backgroundImage: `url(${backgroundLight})`,
           backgroundPosition: "center center",
-          flexGrow: 1
+          flexGrow: 1,
+          paddingTop: 64,
+          paddingBottom: 64
         }}
       >
         <main
@@ -45,11 +48,7 @@ const Layout = ({ children }) => {
           {children}
         </main>
       </div>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <Footer />
     </div>
   )
 }
