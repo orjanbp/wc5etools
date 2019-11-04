@@ -3,11 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import AllCreatures from "../components/home/all-creatures"
-
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <h1>
+      Warcraft
+    </h1>
   </Layout>
 )
 
