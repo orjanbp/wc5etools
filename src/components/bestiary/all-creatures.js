@@ -62,10 +62,10 @@ const AllCreatures = () => {
       {_.keys(creaturesByCR)
         .sort((a, b) => a - b)
         .map((category) => (
-          <CreatureListGroup>
+          <CreatureListGroup key={creaturesByCR[category].cr}>
             <h3>Challenge Rating {creaturesByCR[category].cr}</h3>
             {_.map(creaturesByCR[category].creatures, (creature) => (
-              <CreatureListItem creature={creature} />
+              <CreatureListItem key={creature.id} creature={creature} />
             ))}
           </CreatureListGroup>
         ))}

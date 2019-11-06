@@ -34,6 +34,7 @@ const LegalPage = () => {
       ) {
         edges {
           node {
+            id
             html
           }
         }
@@ -48,6 +49,7 @@ const LegalPage = () => {
         <h1>Legal Stuff </h1>
         {data.legalText.edges.map((edge) => (
           <LegalText
+            key={edge.node.id}
             dangerouslySetInnerHTML={{ __html: edge.node.html }}
           ></LegalText>
         ))}
