@@ -8,8 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import Header from "./header"
-import Footer from "./footer"
+import Header from "./_partials/header"
+import Footer from "./_partials/footer"
 import backgroundLight from "../images/background-light.png"
 
 import "./_css/normalize.css"

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const ToolLink = styled(Link)`
+const BlockLink = styled(Link)`
   background-color: #fbfaf9;
   padding: 32px;
   border: 1px solid #ede3d4;
@@ -25,18 +25,18 @@ const ToolLink = styled(Link)`
   }
 `
 
-const ToolLinkItem = ({ to, children }) => (
-  <ToolLink to={to}>{children}</ToolLink>
-)
-
-const ToolLinkGroup = styled.div`
+const BlockLinkGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  & ${ToolLink} {
+  & ${BlockLink} {
     display: block;
     width: 50%;
   }
 `
 
-export { ToolLinkGroup, ToolLinkItem }
+const BlockLinkItem = ({ to, children }) => (
+  <BlockLink to={to}>{children}</BlockLink>
+)
+
+export { BlockLinkGroup, BlockLinkItem }
