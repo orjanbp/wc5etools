@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 
 const FooterBar = styled.footer`
   display: flex;
@@ -28,7 +29,9 @@ const FooterBarLink = styled.a`
 
 const Footer = () => (
   <FooterBar>
-    <FooterBarLink>Legal stuff</FooterBarLink>
+    <FooterBarLink as={Link} to="/legal">
+      Legal stuff
+    </FooterBarLink>
     <FooterBarLink href="https://www.gatsbyjs.org" target="_blank">
       Built with Gatsby
     </FooterBarLink>

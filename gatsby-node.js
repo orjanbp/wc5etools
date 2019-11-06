@@ -5,11 +5,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   const creatureTemplate = path.resolve(`src/templates/creatureTemplate.js`)
 
-  const result = await graphql(`
+  const creatures = await graphql(`
     {
       allMarkdownRemark(
-        sort: { order: ASC, fields: [frontmatter___title] }
-        limit: 1000
+        filter: { frontmatter: { template: { eq: "creature" } } }
+        sort: { fields: frontmatter___title, order: ASC }
       ) {
         edges {
           node {
@@ -23,12 +23,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `)
 
   // Handle errors
-  if (result.errors) {
+  if (creatures.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  creatures.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: creatureTemplate,
