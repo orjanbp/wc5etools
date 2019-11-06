@@ -31,7 +31,7 @@ const Button = styled.a`
   }
 `
 
-const ButtonLink = ({ children, to, href }) => {
+const LinkButton = ({ children, to, href }) => {
   if (to !== "")
     return (
       <Button as={Link} to={to}>
@@ -46,14 +46,14 @@ const ButtonLink = ({ children, to, href }) => {
     )
 }
 
-ButtonLink.propTypes = {
+LinkButton.propTypes = {
   to: PropTypes.string,
   href: PropTypes.string
 }
 
-ButtonLink.defaultProps = {
+LinkButton.defaultProps = {
   to: "",
   href: ""
 }
 
-export default ButtonLink
+export default LinkButton

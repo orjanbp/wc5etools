@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-const BlockLink = styled(Link)`
+const LinkBlock = styled(Link)`
   background-color: #fbfaf9;
   padding: 32px;
   border: 1px solid #ede3d4;
@@ -32,18 +32,18 @@ const BlockLink = styled(Link)`
   }
 `
 
-const BlockLinkGroup = styled.div`
+const LinkBlockGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
 
-  & ${BlockLink} {
+  & ${LinkBlock} {
     display: block;
     width: 50%;
   }
 `
 
-const BlockLinkItem = ({ to, children }) => (
-  <BlockLink to={to}>{children}</BlockLink>
+const LinkBlockItem = ({ to, children }) => (
+  <LinkBlock to={to}>{children}</LinkBlock>
 )
 
-export { BlockLinkGroup, BlockLinkItem }
+export { LinkBlockGroup, LinkBlockItem }
