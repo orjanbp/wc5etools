@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,6 +11,10 @@ import {
 
 import ButtonLink from "../components/_partials/button-link"
 
+const IndexButtonGroup = styled.div`
+  margin-top: 32px;
+`
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -19,14 +24,14 @@ const IndexPage = () => (
         This is a collection of tools that are intended to be used with a
         community-made Warcraft supplement for Dungeons & Dragons 5th Edition.
       </p>
-      <p>
+      <IndexButtonGroup>
         <ButtonLink href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
           Get the Books
         </ButtonLink>
         <ButtonLink href="https://www.reddit.com/r/wc5e/">
           Visit Reddit
         </ButtonLink>
-      </p>
+      </IndexButtonGroup>
     </LeadText>
     <BlockLinkGroup>
       <BlockLinkItem to="/bestiary">
