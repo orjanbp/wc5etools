@@ -1,9 +1,8 @@
 const path = require(`path`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const { createPage } = actions
-
   const creatureTemplate = path.resolve(`src/templates/creatureTemplate.js`)
+  const redirectTemplate = path.resolve(`src/templates/redirectTemplate.js`)
 
   const creatures = await graphql(`
     {
@@ -22,6 +21,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
+  const redirect = await graphql(`
+    {
+      allMarkdownRemark(filter: { frontmatter: { redirect: { eq: true } } }) {
+        edges {
+          node {
+            frontmatter {
+              path
+            }
+          }
+        }
+      }
+    }
+  `)
+
   // Handle errors
   if (creatures.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
@@ -29,9 +42,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   creatures.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
+    actions.createPage({
       path: node.frontmatter.path,
       component: creatureTemplate,
+      context: {} // additional data can be passed via context
+    })
+  })
+
+  redirect.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    actions.createPage({
+      path: node.frontmatter.path,
+      component: redirectTemplate,
       context: {} // additional data can be passed via context
     })
   })

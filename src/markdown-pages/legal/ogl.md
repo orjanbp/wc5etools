@@ -3,6 +3,7 @@ title: "WOTC Legal"
 template: "legal"
 order: 3
 path: "/legal/ogl"
+redirect: true
 ---
 
 ### OPEN GAME LICENSE Version 1.0a

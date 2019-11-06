@@ -3,6 +3,7 @@ title: "WOTC Legal"
 template: "legal"
 order: 2
 path: "/legal/wotc"
+redirect: true
 ---
 
 ### Wizards of the Coast License

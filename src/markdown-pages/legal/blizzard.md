@@ -3,6 +3,7 @@ title: "Blizzard Legal"
 template: "legal"
 order: 1
 path: "/legal/blizzard"
+redirect: true
 ---
 
 ### Blizzard Entertainment License
