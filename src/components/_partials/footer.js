@@ -2,18 +2,36 @@ import React from "react"
 import styled from "styled-components"
 
 const FooterBar = styled.footer`
-  padding: 24px 32px;
+  display: flex;
   background-color: #373737;
-  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
+  height: 64px;
+  padding: 0px 32px;
+  border-top: 1px solid #ede3d4;
+  font-size: 1.4rem;
   text-align: center;
   color: #f7f7f7;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
+  justify-content: center;
+`
+
+const FooterBarLink = styled.a`
+  align-self: center;
+  padding: 12px 16px;
+  color: #f4d03e;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    color: #faecb1;
+  }
 `
 
 const Footer = () => (
   <FooterBar>
-    © {new Date().getFullYear()}, Built with
-    {` `}
-    <a href="https://www.gatsbyjs.org">Gatsby</a>
+    <FooterBarLink>Legal stuff</FooterBarLink>
+    <FooterBarLink href="https://www.gatsbyjs.org" target="_blank">
+      Built with Gatsby
+    </FooterBarLink>
   </FooterBar>
 )
 
