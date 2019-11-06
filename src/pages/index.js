@@ -3,7 +3,12 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import LeadText from "../components/_partials/lead-text"
-import { BlockLinkGroup, BlockLinkItem } from "../components/_partials/block-link"
+import {
+  BlockLinkGroup,
+  BlockLinkItem
+} from "../components/_partials/block-link"
+
+import ButtonLink from "../components/_partials/button-link"
 
 const IndexPage = () => (
   <Layout>
@@ -11,8 +16,16 @@ const IndexPage = () => (
     <LeadText>
       <h1>Warcraft 5E Tools</h1>
       <p>
-        A collection of tools for use with a community-made Warcraft supplement
-        for Dungeons & Dragons 5th Edition.
+        This is a collection of tools that are intended to be used with a
+        community-made Warcraft supplement for Dungeons & Dragons 5th Edition.
+      </p>
+      <p>
+        <ButtonLink href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
+          Get the books
+        </ButtonLink>
+        <ButtonLink href="https://www.reddit.com/r/wc5e/">
+          Visit Reddit
+        </ButtonLink>
       </p>
     </LeadText>
     <BlockLinkGroup>
