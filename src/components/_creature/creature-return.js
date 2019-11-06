@@ -17,6 +17,17 @@ const ReturnButton = styled(Link)`
   & svg {
     margin-right: 8px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #cf3e2e;
+    border-color: #cf3e2e;
+  }
+
+  &:active {
+    background-color: #f6f5f4;
+  }
 `
 
 const CreatureReturn = () => (

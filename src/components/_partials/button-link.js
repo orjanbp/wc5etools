@@ -13,9 +13,14 @@ const Button = styled.a`
   font-size: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.27);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
 
-  &:hover {
+  & + & {
+    margin-left: 8px;
+  }
+
+  &:hover,
+  &:focus {
     background-color: #cf3e2e;
     color: #fff;
   }
@@ -24,37 +29,29 @@ const Button = styled.a`
     background-color: #b13428;
     border-color: #a33025;
   }
-
-  & + & {
-    margin-left: 8px;
-  }
 `
 
-const ButtonLink = ({ children, style, to, href }) => {
-  if (to !== "") {
+const ButtonLink = ({ children, to, href }) => {
+  if (to !== "")
     return (
-      <Link as={Button} to={to}>
+      <Button as={Link} to={to}>
         {children}
-      </Link>
+      </Button>
     )
-  } else {
+  if (to === "")
     return (
       <Button href={href} target="_blank">
         {children}
       </Button>
     )
-  }
 }
 
 ButtonLink.propTypes = {
-  children: PropTypes.node.isRequired,
-  style: PropTypes.string,
   to: PropTypes.string,
   href: PropTypes.string
 }
 
 ButtonLink.defaultProps = {
-  style: "primary",
   to: "",
   href: ""
 }

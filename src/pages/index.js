@@ -21,7 +21,7 @@ const IndexPage = () => (
       </p>
       <p>
         <ButtonLink href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
-          Get the books
+          Get the Books
         </ButtonLink>
         <ButtonLink href="https://www.reddit.com/r/wc5e/">
           Visit Reddit

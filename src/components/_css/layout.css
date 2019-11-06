@@ -21,7 +21,7 @@ html {
 body {
   font-size: 1.6em;
   /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 1.4;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #222;
 }
@@ -59,9 +59,18 @@ h3 {
   margin-bottom: 16px;
 }
 
+h4 {
+  font-size: 2rem;
+  line-height: 1.25;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 /* Phablet font sizes */

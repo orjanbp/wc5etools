@@ -7,21 +7,28 @@ const BlockLink = styled(Link)`
   padding: 32px;
   border: 1px solid #ede3d4;
   border-radius: 2px;
-  color: #2c3e50;
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
 
-  &:hover {
-    background-color: #fafafa;
-  }
-
   & h3 {
     margin-top: 0px;
+    color: #2c3e50;
   }
 
   & p {
     margin-bottom: 0px;
+    color: #2c3e50;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    border-color: #cf3e2e;
+  }
+
+  &:active {
+    background-color: #f3f2f1;
   }
 `
 

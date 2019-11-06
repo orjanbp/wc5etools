@@ -15,13 +15,24 @@ const CreatureLink = styled(Link)`
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
 
-  &:hover {
-    background-color: #fafafa;
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    color: #2c3e50;
+    border-color: #cf3e2e;
+
+    & h4 {
+      color: #cf3e2e;
+    }
+  }
+
+  &:active {
+    background-color: #f6f5f4;
   }
 `
 
 const CreatureLinkLeft = styled.div`
-  & span {
+  & h4 {
     font-weight: 600;
   }
 `
@@ -37,7 +48,7 @@ const CreatureLinkRight = styled.div`
 const CreatureListItem = ({ creature }) => (
   <CreatureLink to={creature.path}>
     <CreatureLinkLeft>
-      <span>{creature.name}</span>
+      <h4>{creature.name}</h4>
     </CreatureLinkLeft>
     <CreatureLinkRight>
       <span>{_.startCase(creature.type)}</span>
