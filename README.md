@@ -6,7 +6,7 @@
   Warcraft 5E Tools
 </h1>
 
-This is the Github repository for a collection of tools, all developed for an unofficial third-party *Warcraft* supplement for *Dungeons & Dragons 5th Edition*. Everything in the supplement is provided for free, as in "free beer", and everything in this toolset is open source for expansion and modification.
+This is the Github repository for a collection of tools, all developed for an unofficial third-party *Warcraft* supplement for *Dungeons & Dragons 5th Edition*. Everything in the supplement is provided for free, and everything in this toolset is open source for expansion and modification.
 
 
 <p align="center">
