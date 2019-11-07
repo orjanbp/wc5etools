@@ -32,7 +32,8 @@ const LayoutInner = styled.div`
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 64px 1.0875rem 64px;
+  padding: 64px 16px 64px;
+  box-sizing: border-box;
 `
 
 const Layout = ({ children }) => {

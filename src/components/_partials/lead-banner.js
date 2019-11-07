@@ -1,18 +1,7 @@
 import styled from "styled-components"
-
-const LeadBanner = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  background-color: #333;
-  padding: 128px 32px;
-`
+import breakpoints from "./breakpoints"
 
 const LeadText = styled.div`
-  width: 100%;
-  max-width: 760px;
-
   & h1 {
     color: #c0392b;
   }
@@ -25,9 +14,29 @@ const LeadText = styled.div`
 `
 
 const LeadButtons = styled.div`
-  width: 100%;
-  max-width: 760px;
   margin-top: 40px;
+`
+
+const LeadBanner = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  padding: 128px 0px;
+  box-sizing: border-box;
+
+  & ${LeadText}, & ${LeadButtons} {
+    width: 100%;
+    max-width: 960px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  @media ${breakpoints.xsmall} {
+    padding: 64px 0px;
+  }
 `
 
 export { LeadBanner, LeadText, LeadButtons }

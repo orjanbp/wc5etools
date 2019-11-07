@@ -1,8 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import breakpoints from "./breakpoints"
 
 const LinkBlock = styled(Link)`
+  display: block;
   background-color: #fbfaf9;
   padding: 32px;
   border: 1px solid #ede3d4;
@@ -37,8 +39,11 @@ const LinkBlockGroup = styled.div`
   flex-wrap: wrap;
 
   & ${LinkBlock} {
-    display: block;
     width: 50%;
+
+    @media ${breakpoints.small} {
+      width: 100%;
+    }
   }
 `
 
