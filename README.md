@@ -10,8 +10,12 @@ This is the Github repository for a collection of tools, all developed for an un
 
 
 <p align="center">
-  <a href="https://orjanbp.github.io/wc5etools/"><img alt="Open WC5ETools" src="https://i.imgur.com/LflPfQA.png" /></a>
-  <a href="https://github.com/orjanbp/wc5etools/issues"><img alt="Post an Issue" src="https://i.imgur.com/GBc9rcj.png" /></a>
+  <a href="https://orjanbp.github.io/wc5etools/" target="_blank">
+      <img alt="Open WC5ETools" src="https://i.imgur.com/LflPfQA.png" />
+  </a>
+  <a href="https://github.com/orjanbp/wc5etools/issues" target="_blank">
+      <img alt="Post an Issue" src="https://i.imgur.com/GBc9rcj.png" />
+  </a>
 </p>
 
 
