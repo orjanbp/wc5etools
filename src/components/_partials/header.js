@@ -6,23 +6,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 const HeaderBar = styled.header`
   display: flex;
   height: 64px;
-  padding: 0px 32px;
+  padding: 0px 24px;
   background-color: #373737;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
   justify-content: space-between;
 `
 
 const HeaderBarSection = styled.div`
+  display: flex;
   align-self: center;
+  align-items: center;
   font-size: 1.4rem;
   min-width: 200px;
 
-  ${(props) => props.center && css`
-    text-align: center;
-  `}
-
   ${(props) => props.right && css`
-    text-align: right;
+    justify-content: flex-end;
   `}
 `
 
@@ -36,6 +34,15 @@ const HeaderBarTitle = styled(Link)`
   &:focus {
     color: #faecb1;
   }
+`
+
+const HeaderBarDivider = styled.span`
+  display: inline-block;
+  background: #515151;
+  height: 24px;
+  width: 2px;
+  margin: 0px 4px;
+  border-radius: 1px;
 `
 
 const HeaderBarLink = styled.a`
@@ -64,8 +71,7 @@ const Header = () => (
   <HeaderBar>
     <HeaderBarSection>
       <HeaderBarTitle to="/">WC5E Tools</HeaderBarTitle>
-    </HeaderBarSection>
-    <HeaderBarSection center>
+      <HeaderBarDivider />
       <HeaderBarLink as={Link} to="/bestiary">Bestiary</HeaderBarLink>
     </HeaderBarSection>
     <HeaderBarSection right>
