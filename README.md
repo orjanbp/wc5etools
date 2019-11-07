@@ -21,9 +21,9 @@ This is the Github repository for a collection of tools, all developed for an un
 
 ## External Links
 
-[Warcraft 5E Books](https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9])
+📚 [Warcraft 5E Books](https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9])
 
-[Warcraft 5E Subreddit](https://www.reddit.com/r/wc5e/])
+💬 [Warcraft 5E Subreddit](https://www.reddit.com/r/wc5e/])
 
 ## What's under the hood?
 
