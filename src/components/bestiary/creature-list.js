@@ -2,10 +2,12 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import _ from "lodash"
+import breakpoints from "../_partials/breakpoints"
 
 const CreatureLink = styled(Link)`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #fbfaf9;
   padding: 20px 32px;
   margin-bottom: 8px;
@@ -32,16 +34,28 @@ const CreatureLink = styled(Link)`
 `
 
 const CreatureLinkLeft = styled.div`
+  display: inline-block;
+  margin-right: 8px;
+
   & h4 {
     font-weight: 600;
   }
 `
 
 const CreatureLinkRight = styled.div`
+  display: inline-block;
+  margin-left: 8px;
+
   & span {
     margin-left: 24px;
     color: #a7adb4;
     font-size: 12px;
+
+    @media ${breakpoints.xsmall} {
+      display: block;
+      margin-left: 0px;
+      text-align: right;
+    }
   }
 `
 
