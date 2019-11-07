@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "wc5etools",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A Gatsby website featuring tools for a Warcraft D&D 5E supplement.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Ørjan Polden <oerjanbpolden@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
@@ -38,8 +38,10 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "gh-pages-clean": "node node_modules/gh-pages/bin/gh-pages-clean",
+    "gh-pages": "gh-pages -d public",
+    "build": "gatsby build --prefix-paths",
+    "deploy": "npm run gh-pages-clean && npm run gh-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json}\"",
     "start": "npm run develop",
@@ -48,9 +50,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/orjanbp/wc5etools"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/orjanbp/wc5etools/issues"
   }
 }
