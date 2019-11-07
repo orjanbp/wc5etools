@@ -4,10 +4,7 @@ import { Layout, LayoutInner } from "../components/layout"
 import SEO from "../components/seo"
 
 import { LeadBanner, LeadText, LeadButtons } from "../components/_partials/lead-banner"
-import {
-  LinkBlockGroup,
-  LinkBlockItem
-} from "../components/_partials/link-block"
+import { LinkBlockGroup, LinkBlockItem } from "../components/_partials/link-block"
 import LinkButton from "../components/_partials/link-button"
 
 const IndexPage = () => (
@@ -22,10 +19,7 @@ const IndexPage = () => (
         </p>
       </LeadText>
       <LeadButtons>
-        <LinkButton
-          big
-          href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9"
-        >
+        <LinkButton big href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
           Get the Books
         </LinkButton>
         <LinkButton big href="https://www.reddit.com/r/wc5e/">
@@ -38,9 +32,8 @@ const IndexPage = () => (
         <LinkBlockItem to="/bestiary">
           <h3>Bestiary</h3>
           <p>
-            Online lookup of all statblocks in the supplement. Some are brought
-            in from the 5E SRD, though the majority are unique Warcraft
-            creatures and NPCs.
+            Online creature stat lookup. Some are from the 5E SRD, while the
+            majority are new Warcraft creatures from this supplement.
           </p>
         </LinkBlockItem>
       </LinkBlockGroup>
