@@ -1,12 +1,19 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <img alt="Gatsby" src="https://i.imgur.com/pMEkhlR.png" width="128" />
+  <img alt="Warcraft Logo" src="https://i.imgur.com/pMEkhlR.png" width="128" />
 </p>
 <h1 align="center">
   Warcraft 5E Tools
 </h1>
 
 This is the Github repository for a collection of tools, all developed for an unofficial third-party *Warcraft* supplement for *Dungeons & Dragons 5th Edition*. Everything in the supplement is provided for free, as in "free beer", and everything in this toolset is open source for expansion and modification.
+
+
+<p align="center">
+  <a href="https://orjanbp.github.io/wc5etools/"><img alt="Open WC5ETools" src="https://i.imgur.com/LflPfQA.png" /></a>
+  <a href="https://github.com/orjanbp/wc5etools/issues"><img alt="Post an Issue" src="https://i.imgur.com/GBc9rcj.png" /></a>
+</p>
+
 
 ## External Links
 
