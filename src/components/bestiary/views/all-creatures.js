@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import _ from "lodash"
 
-import { CreatureListGroup, CreatureListItem } from "../_creature/creature-list"
+import { CreatureListGroup, CreatureListItem } from "../creature-list"
 
 const tidyCreatureData = (creatures) => {
   return _.map(creatures, (creature) => {

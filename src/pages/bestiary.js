@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import AllCreatures from "../components/bestiary/all-creatures"
+import AllCreatures from "../components/bestiary/views/all-creatures"
 
 const BestiaryPage = () => (
   <Layout>
