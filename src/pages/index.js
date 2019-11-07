@@ -12,7 +12,7 @@ import {
 import LinkButton from "../components/_partials/link-button"
 
 const IndexButtonGroup = styled.div`
-  margin-top: 32px;
+  margin-top: 40px;
 `
 
 const IndexPage = () => (
@@ -25,10 +25,10 @@ const IndexPage = () => (
         community-made Warcraft supplement for Dungeons & Dragons 5th Edition.
       </p>
       <IndexButtonGroup>
-        <LinkButton href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
+        <LinkButton big href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
           Get the Books
         </LinkButton>
-        <LinkButton href="https://www.reddit.com/r/wc5e/">
+        <LinkButton big href="https://www.reddit.com/r/wc5e/">
           Visit Reddit
         </LinkButton>
       </IndexButtonGroup>

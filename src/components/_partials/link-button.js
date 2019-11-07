@@ -6,14 +6,14 @@ import { Link } from "gatsby"
 const Button = styled.a`
   display: inline-block;
   background-color: #c0392b;
-  padding: 8px 16px;
   border: 1px solid #b13428;
   border-radius: 2px;
   color: #fff;
-  font-size: 1.6rem;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  padding: ${(props) => (props.big ? "16px 24px" : "8px 16px")};
 
   & + & {
     margin-left: 8px;
@@ -31,16 +31,16 @@ const Button = styled.a`
   }
 `
 
-const LinkButton = ({ children, to, href }) => {
+const LinkButton = ({ children, to, href, big }) => {
   if (to !== "")
     return (
-      <Button as={Link} to={to}>
+      <Button as={Link} to={to} big={big}>
         {children}
       </Button>
     )
   if (to === "")
     return (
-      <Button href={href} target="_blank">
+      <Button href={href} target="_blank" big={big}>
         {children}
       </Button>
     )
@@ -48,12 +48,14 @@ const LinkButton = ({ children, to, href }) => {
 
 LinkButton.propTypes = {
   to: PropTypes.string,
-  href: PropTypes.string
+  href: PropTypes.string,
+  big: PropTypes.bool
 }
 
 LinkButton.defaultProps = {
   to: "",
-  href: ""
+  href: "",
+  big: false
 }
 
 export default LinkButton
