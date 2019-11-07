@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import breakpoints from "../_partials/breakpoints"
 
 const ReturnButton = styled(Link)`
   display: inline-block;
@@ -27,6 +28,34 @@ const ReturnButton = styled(Link)`
 
   &:active {
     background-color: #f6f5f4;
+  }
+
+  @media ${breakpoints.small} {
+    display: flex;
+    align-items: center;
+    margin: 0px -16px 32px;
+    padding: 16px 24px;
+    background-color: #c0392b;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+
+    & svg {
+      margin-right: 16px;
+      font-size: 3.2rem;
+      font-weight: 300;
+    }
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #cf3e2e;
+    }
+
+    &:active {
+      background-color: #b13428;
+      border-color: #a33025;
+    }
   }
 `
 

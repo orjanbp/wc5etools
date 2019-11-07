@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import _ from "lodash"
+import breakpoints from "../_partials/breakpoints"
 
 const Statblock = styled.div`
   background-color: #fbfaf9;
@@ -9,6 +10,14 @@ const Statblock = styled.div`
   border-radius: 2px;
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
+
+  @media ${breakpoints.med} {
+    padding: 32px;
+  }
+
+  @media ${breakpoints.xsmall} {
+    padding: 16px;
+  }
 
   & h2 {
     color: #c0392b;

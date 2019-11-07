@@ -6,11 +6,12 @@
  */
 
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 
 import Header from "./_partials/header"
 import Footer from "./_partials/footer"
 import backgroundLight from "../images/background-light.png"
+import breakpoints from "./_partials/breakpoints"
 
 import "./_css/normalize.css"
 import "./_css/layout.css"
@@ -29,11 +30,22 @@ const LayoutMain = styled.main`
 `
 
 const LayoutInner = styled.div`
+  position: relative;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 64px 16px 64px;
+  padding: 64px 16px;
   box-sizing: border-box;
+
+  @media ${breakpoints.small} {
+    padding: 32px 16px;
+  }
+
+  ${props => props.collapsePaddingMobile && css`
+    @media ${breakpoints.small} {
+      padding-top: 0px;
+    }
+  `}
 `
 
 const Layout = ({ children }) => {

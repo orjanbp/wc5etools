@@ -76,6 +76,10 @@ const CreatureListGroup = styled.div`
 
   & + & {
     padding-top: 64px;
+
+    @media ${breakpoints.med} {
+      padding-top: 32px;
+    }
   }
 
   & h3 {

@@ -13,7 +13,7 @@ export default function Template({
 
   return (
     <Layout>
-      <LayoutInner>
+      <LayoutInner collapsePaddingMobile>
         <CreatureReturn />
         <CreatureStatblock html={html} />
       </LayoutInner>
