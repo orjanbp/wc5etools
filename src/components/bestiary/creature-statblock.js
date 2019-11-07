@@ -11,14 +11,6 @@ const Statblock = styled.div`
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
 
-  @media ${breakpoints.med} {
-    padding: 32px;
-  }
-
-  @media ${breakpoints.xsmall} {
-    padding: 16px;
-  }
-
   & h2 {
     color: #c0392b;
   }
@@ -56,6 +48,28 @@ const Statblock = styled.div`
 
   & td {
     padding: 0px 12px;
+  }
+
+  @media ${breakpoints.med} {
+    padding: 32px;
+  }
+
+  @media ${breakpoints.xsmall} {
+    padding: 16px;
+
+    & p, & li {
+      font-size: 1.4rem;
+    }
+
+    & th, & td {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    & td {
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
   }
 `
 const CreatureStatblock = ({ html }) => (

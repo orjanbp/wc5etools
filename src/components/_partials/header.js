@@ -2,6 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import breakpoints from './breakpoints'
 
 const HeaderBar = styled.header`
   display: flex;
@@ -10,6 +11,10 @@ const HeaderBar = styled.header`
   background-color: #373737;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
   justify-content: space-between;
+
+  @media ${breakpoints.large} {
+    padding: 0px 8px;
+  }
 `
 
 const HeaderBarSection = styled.div`
@@ -17,7 +22,6 @@ const HeaderBarSection = styled.div`
   align-self: center;
   align-items: center;
   font-size: 1.4rem;
-  min-width: 200px;
 
   ${(props) => props.right && css`
     justify-content: flex-end;

@@ -38,7 +38,7 @@ const LayoutInner = styled.div`
   box-sizing: border-box;
 
   @media ${breakpoints.small} {
-    padding: 32px 16px;
+    padding: 32px 8px;
   }
 
   ${props => props.collapsePaddingMobile && css`
