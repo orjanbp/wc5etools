@@ -1,12 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 import breakpoints from "./breakpoints"
 
 const Button = styled.a`
   display: inline-block;
   background-color: #c0392b;
+  padding: 8px 16px;
   border: 1px solid #b13428;
   border-radius: 2px;
   color: #fff;
@@ -15,7 +16,9 @@ const Button = styled.a`
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
 
-  padding: ${(props) => (props.big ? "16px 24px" : "8px 16px")};
+  & + & {
+    margin-left: 8px;
+  }
 
   &:hover,
   &:focus {
@@ -28,18 +31,23 @@ const Button = styled.a`
     border-color: #a33025;
   }
 
-  & + & {
-    margin-left: 8px;
+  ${(props) => props.big && css`
+    padding: 16px 24px;
+    border-color: #D85C4F;
 
-    @media ${breakpoints.xsmall} {
-      margin-top: 8px;
-      margin-left: 0px;
+    &:active {
+      border-color: #CF3E2E;
     }
-  }
+  `}
 
   @media ${breakpoints.xsmall} {
     display: block;
     width: 100%;
+
+    & + & {
+      margin-top: 8px;
+      margin-left: 0px;
+    }
   }
 `
 

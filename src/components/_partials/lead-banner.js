@@ -5,7 +5,7 @@ import BannerImageDark from "../../images/bannerimagedark.jpg"
 
 const LeadText = styled.div`
   & h1 {
-    color: #c0392b;
+    color: #fff;
     filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.6));
   }
 
@@ -13,7 +13,7 @@ const LeadText = styled.div`
     max-width: 600px;
     font-size: 2rem;
     font-weight: 300;
-    color: #fafafa;
+    color: #f2f2f2;
     filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.6))
       drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.6));
   }
@@ -42,6 +42,7 @@ const LeadBanner = styled.div`
   background-color: #333;
   background-image: url(${BannerImageDark});
   background-size: cover;
+  border-bottom: 1px solid #1E1E1E;
   padding: 128px 0px;
   box-sizing: border-box;
 

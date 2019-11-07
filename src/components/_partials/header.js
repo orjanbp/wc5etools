@@ -9,6 +9,7 @@ const HeaderBar = styled.header`
   height: 64px;
   padding: 0px 24px;
   background-color: #373737;
+  border-bottom: 1px solid #1E1E1E;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.12);
   justify-content: space-between;
 

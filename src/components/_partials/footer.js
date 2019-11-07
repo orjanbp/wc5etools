@@ -7,7 +7,7 @@ const FooterBar = styled.footer`
   background-color: #373737;
   height: 64px;
   padding: 0px 32px;
-  border-top: 1px solid #ede3d4;
+  border-top: 1px solid #1E1E1E;
   font-size: 1.4rem;
   text-align: center;
   color: #f7f7f7;
