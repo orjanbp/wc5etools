@@ -11,6 +11,12 @@ const LeadText = styled.div`
     font-weight: 300;
     color: #fafafa;
   }
+
+  @media ${breakpoints.xsmall} {
+    & p {
+      font-size: 1.8rem;
+    }
+  }
 `
 
 const LeadButtons = styled.div`
