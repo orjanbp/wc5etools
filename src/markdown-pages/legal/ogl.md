@@ -1,7 +1,7 @@
 ---
 title: "WOTC Legal"
 template: "legal"
-order: 3
+order: 5
 path: "/legal/ogl"
 redirect: true
 ---

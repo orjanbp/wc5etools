@@ -1,7 +1,7 @@
 ---
 title: "WOTC Legal"
 template: "legal"
-order: 2
+order: 4
 path: "/legal/wotc"
 redirect: true
 ---
