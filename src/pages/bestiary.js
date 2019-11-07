@@ -1,13 +1,15 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import { Layout, LayoutInner } from "../components/layout"
 import SEO from "../components/seo"
 import AllCreatures from "../components/bestiary/views/all-creatures"
 
 const BestiaryPage = () => (
   <Layout>
     <SEO title="Bestiary" />
-    <AllCreatures />
+    <LayoutInner>
+      <AllCreatures />
+    </LayoutInner>
   </Layout>
 )
 

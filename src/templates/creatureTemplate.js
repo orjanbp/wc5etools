@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import { Layout, LayoutInner } from "../components/layout"
 import CreatureReturn from "../components/bestiary/creature-return"
 import CreatureStatblock from "../components/bestiary/creature-statblock"
 
@@ -13,8 +13,10 @@ export default function Template({
 
   return (
     <Layout>
-      <CreatureReturn />
-      <CreatureStatblock html={html} />
+      <LayoutInner>
+        <CreatureReturn />
+        <CreatureStatblock html={html} />
+      </LayoutInner>
     </Layout>
   )
 }
