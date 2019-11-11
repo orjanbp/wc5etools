@@ -4,7 +4,7 @@ import { Layout, LayoutInner } from "../components/layout"
 import SEO from "../components/seo"
 
 import { LeadBanner, LeadText, LeadButtons } from "../components/_partials/lead-banner"
-import { LinkBlockGroup, LinkBlockItem } from "../components/_partials/link-block"
+import { LinkBlockHeader, LinkBlockGroup, LinkBlockItem } from "../components/_partials/link-block"
 import LinkButton from "../components/_partials/link-button"
 
 const IndexPage = () => (
@@ -28,6 +28,7 @@ const IndexPage = () => (
       </LeadButtons>
     </LeadBanner>
     <LayoutInner>
+      <LinkBlockHeader>Tool Overview</LinkBlockHeader>
       <LinkBlockGroup>
         <LinkBlockItem to="/bestiary">
           <h3>Bestiary</h3>
