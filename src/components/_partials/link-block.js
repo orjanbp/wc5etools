@@ -34,6 +34,12 @@ const LinkBlock = styled(Link)`
   }
 `
 
+const LinkBlockHeader = styled.h2`
+  margin-left: 4px;
+  margin-bottom: 16px;
+  color: #c0392b;
+`
+
 const LinkBlockGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -51,4 +57,4 @@ const LinkBlockItem = ({ to, children }) => (
   <LinkBlock to={to}>{children}</LinkBlock>
 )
 
-export { LinkBlockGroup, LinkBlockItem }
+export { LinkBlockHeader, LinkBlockGroup, LinkBlockItem }
