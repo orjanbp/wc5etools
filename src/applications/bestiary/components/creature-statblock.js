@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import _ from "lodash"
-import breakpoints from "../_partials/breakpoints"
+import breakpoints from "../../../components/_partials/breakpoints"
 
 const Statblock = styled.div`
   background-color: #fbfaf9;

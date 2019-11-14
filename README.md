@@ -40,11 +40,13 @@ The project uses the following folder structure:
     .
     /parser
     /src
-        /components
-            /_css
-            /_partials
-            /[module-name]
-                /views
+      /applications
+          /components
+          /stores
+          /views
+      /components
+          /_css
+          /_partials
       /images
       /markdown-pages
       /pages
@@ -52,23 +54,28 @@ The project uses the following folder structure:
 
 1. **`/parser`**: This directory contains a Node app for transpiling the data in the original project books to markdown pages that can be used in this project.
 
-2. **`/components`**: This directory contains all components that are used on other pages.
+2. **`/applications`**: Each app project that is part of this toolkit sits in its own folder in this directory.
 
-3. **`/_css`**: This directory contains all static CSS files (boilerplates, etc.) that are used to lay the style grounds.
+    1. **`/components`**: Reusable components that are unique for an application are contained here.
 
-4. **`/_partials`**: This directory contains the most generic, reusable React components.
+    2. **`/stores`**: Each app has its data stores placed in a /stores/ folder within that app directory.
 
-5. **`/[module-name]`**: Each project has a directory named after itself (e.g. `/bestiary`), into which its unique components go.
+    2. **`/views`**: This directory contains all components inside an application that are composed views, rather than reusable components. Two different views of the same Bestiary app page, for example.
 
-6. **`/views`**: This directory contains all components inside a module that are composed views, rather than reusable components. Two different views of the same Bestiary app page, for example.
+3. **`/components`**: This directory contains all components that can be reused across the whole website.
 
-7. **`/images`**: This directory contains all static images.
+    1. **`/_css`**: This directory contains all static CSS files (boilerplates, etc.) that are used to lay the style grounds.
 
-8. **`/markdown-pages`**: This directory contains all static markdown pages, that are converted to Gatsby pages via remark.
+    2. **`/_partials`**: This directory contains the most generic, reusable React components.
 
-9. **`/pages`**: This directory contains all app pages, that aren't built from a markdown page. Each app will have its own page here, rendering the views of that app.
 
-10. **`/templates`**: This directory contains all templates used to convert markdown pages.
+4. **`/images`**: This directory contains all static images.
+
+5. **`/markdown-pages`**: This directory contains all static markdown pages, that are converted to Gatsby pages via remark.
+
+6. **`/pages`**: This directory contains all app pages, that aren't built from a markdown page. Each app will have its own page here, rendering the views of that app.
+
+7. **`/templates`**: This directory contains all templates used to convert markdown pages.
 
 ## Legal
 
