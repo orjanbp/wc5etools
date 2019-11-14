@@ -1,15 +1,5 @@
-import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import _ from "lodash"
-
-const tidyCreatureData = (creatures) => {
-  return _.map(creatures, (creature) => {
-    return {
-      id: creature.node.id,
-      ...creature.node.frontmatter
-    }
-  })
-}
 
 const BestiaryData = () => {
   const data = useStaticQuery(graphql`
@@ -32,10 +22,15 @@ const BestiaryData = () => {
     }
   `)
 
-  return data.creatures.edges
+  return data.creatures.edges.map((edge) => {
+    return {
+      id: edge.node.id,
+      ...edge.node.frontmatter
+    }
+  })
 }
 
 export const getCreatureData = () => {
-  let creatureData = tidyCreatureData(BestiaryData())
+  let creatureData = BestiaryData()
   return creatureData
 }

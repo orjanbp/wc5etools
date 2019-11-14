@@ -6,8 +6,7 @@
   Warcraft 5E Tools
 </h1>
 
-This is the Github repository for a collection of tools, all developed for an unofficial third-party *Warcraft* supplement for *Dungeons & Dragons 5th Edition*. Everything in the supplement is provided for free, and everything in this toolset is open source for making pull requests to modify or expand on it.
-
+This is the Github repository for a collection of tools, all developed for an unofficial third-party _Warcraft_ supplement for _Dungeons & Dragons 5th Edition_. Everything in the supplement is provided for free, and everything in this toolset is open source for making pull requests to modify or expand on it.
 
 <p align="center">
   <a href="https://orjanbp.github.io/wc5etools/" target="_blank">
@@ -17,7 +16,6 @@ This is the Github repository for a collection of tools, all developed for an un
       <img alt="Post an Issue" src="https://i.imgur.com/GBc9rcj.png" />
   </a>
 </p>
-
 
 ## External Links
 
@@ -42,6 +40,7 @@ The project uses the following folder structure:
     /src
       /applications
           /components
+          /data
           /stores
           /utils
           /views
@@ -57,28 +56,29 @@ The project uses the following folder structure:
 
 2. **`/applications`**: Each app project that is part of this toolkit sits in its own folder in this directory.
 
-    1. **`/components`**: Reusable components that are unique for an application are contained here.
+   1. **`/components`**: Reusable components that are unique for an application are contained here.
 
-    2. **`/stores`**: Each app has its data stores placed in a /stores/ folder within that app directory.
+   2. **`/data`**: Static Graphql queries for data that is used by the component is stored here. Static arrays and objects, retrieved as getters, can also be stored here.
 
-    2. **`/utils`**: This directory contains functions important to the app, that are self-contained enough to extract to their own files. Separate from components, as they export functions -- not JSX elements.
+   3. **`/stores`**: Each app has its data stores placed in a /stores/ folder within that app directory.
 
-    2. **`/views`**: This directory contains all components inside an application that are composed views, rather than reusable components. Two different views of the same Bestiary app page, for example.
+   4. **`/utils`**: This directory contains functions important to the app, that are self-contained enough to extract to their own files. Separate from components, as they export functions -- not JSX elements.
+
+   5. **`/views`**: This directory contains all components inside an application that are composed views, rather than reusable components. Two different views of the same Bestiary app page, for example.
 
 3. **`/components`**: This directory contains all components that can be reused across the whole website.
 
-    1. **`/_css`**: This directory contains all static CSS files (boilerplates, etc.) that are used to lay the style grounds.
+   1. **`/_css`**: This directory contains all static CSS files (boilerplates, etc.) that are used to lay the style grounds.
 
-    2. **`/_partials`**: This directory contains the most generic, reusable React components.
+   2. **`/_partials`**: This directory contains the most generic, reusable React components.
 
+4) **`/images`**: This directory contains all static images.
 
-4. **`/images`**: This directory contains all static images.
+5) **`/markdown-pages`**: This directory contains all static markdown pages, that are converted to Gatsby pages via remark.
 
-5. **`/markdown-pages`**: This directory contains all static markdown pages, that are converted to Gatsby pages via remark.
+6) **`/pages`**: This directory contains all app pages, that aren't built from a markdown page. Each app will have its own page here, rendering the views of that app.
 
-6. **`/pages`**: This directory contains all app pages, that aren't built from a markdown page. Each app will have its own page here, rendering the views of that app.
-
-7. **`/templates`**: This directory contains all templates used to convert markdown pages.
+7) **`/templates`**: This directory contains all templates used to convert markdown pages.
 
 ## Legal
 
