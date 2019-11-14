@@ -14,12 +14,14 @@ const BestiaryTypes = () => {
             }
           }
         }
-        distinct(field: frontmatter___type)
       }
     }
   `)
 
-  return data.creatures.edges.map((edge) => edge.node.frontmatter.type)
+  return _(data.creatures.edges)
+    .map((edge) => edge.node.frontmatter.type)
+    .uniq()
+    .value()
 }
 
 export const getCreatureTypes = () => {

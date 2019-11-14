@@ -4,11 +4,13 @@ import styled from "styled-components"
 // import breakpoints from "../_partials/breakpoints"
 
 import { BestiaryStore } from "../stores/bestiary-store"
+import { getCreatureTypes } from "../data/creature-types"
 
 const NameSearch = styled.input``
 
 const CreatureFilterForm = () => {
   const { state, dispatch } = React.useContext(BestiaryStore)
+  const creatureTypes = getCreatureTypes()
 
   const filterNameAction = (name) => {
     return dispatch({
@@ -19,7 +21,7 @@ const CreatureFilterForm = () => {
 
   return (
     <>
-      {/* {console.log(state)} */}
+      {console.log(creatureTypes)}
       <NameSearch
         type='text'
         placeholder='Search Creature Names'

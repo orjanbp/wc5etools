@@ -22,12 +22,14 @@ const BestiaryData = () => {
     }
   `)
 
-  return data.creatures.edges.map((edge) => {
-    return {
-      id: edge.node.id,
-      ...edge.node.frontmatter
-    }
-  })
+  return _(data.creatures.edges)
+    .map((edge) => {
+      return {
+        id: edge.node.id,
+        ...edge.node.frontmatter
+      }
+    })
+    .value()
 }
 
 export const getCreatureData = () => {

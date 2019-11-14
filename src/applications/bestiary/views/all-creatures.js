@@ -2,9 +2,9 @@ import React from "react"
 import _ from "lodash"
 
 import { BestiaryStore } from "../stores/bestiary-store"
-import { getCreatureData } from "../data/get-creature-data"
-import filterCreatures from "../utils/filter-creatures"
+import { getCreatureData } from "../data/creature-data"
 
+import filterCreatures from "../utils/filter-creatures"
 import { CreatureListGroup, CreatureListItem } from "../components/creature-list"
 
 const getCreaturesByCR = (creatures) => {
