@@ -1,16 +1,22 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
 import _ from "lodash"
 
+import { BestiaryStore } from "../../../stores/bestiary-store"
+import { getCreatureData } from "../../../stores/bestiary-data-store"
 import { CreatureListGroup, CreatureListItem } from "../creature-list"
 
-const tidyCreatureData = (creatures) => {
-  return _.map(creatures, (creature) => {
-    return {
-      id: creature.node.id,
-      ...creature.node.frontmatter
-    }
-  })
+const filterCreatures = (creatures, filter) => {
+  let nameRegex = filter.name
+    .split(/['\s,-]+/)
+    .map((term) => `(${term})`)
+    .join(`.*`)
+  nameRegex = RegExp(nameRegex, "gi")
+
+  let filteredCreatures = _.filter(creatures, (creature) =>
+    nameRegex.test(creature.name)
+  )
+
+  return filteredCreatures
 }
 
 const getCreaturesByCR = (creatures) => {
@@ -32,30 +38,15 @@ const getCreaturesByCR = (creatures) => {
 }
 
 const AllCreatures = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      creatures: allMarkdownRemark(
-        filter: { frontmatter: { template: { eq: "creature" } } }
-      ) {
-        edges {
-          node {
-            id
-            frontmatter {
-              name: title
-              type
-              cr
-              crDecimal
-              template
-              path
-            }
-          }
-        }
-      }
-    }
-  `)
+  const { state } = React.useContext(BestiaryStore)
+  const creatureData = getCreatureData()
 
-  let creatureData = tidyCreatureData(data.creatures.edges)
-  let creaturesByCR = getCreaturesByCR(creatureData)
+  let creatures = filterCreatures(creatureData, state.filter)
+  let creaturesByCR = getCreaturesByCR(creatures)
+
+  React.useEffect(() => {
+    // console.log(state)
+  }, [filterCreatures])
 
   return (
     <>
