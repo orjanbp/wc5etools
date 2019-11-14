@@ -1,12 +1,12 @@
 import React from "react"
 
 import { BestiaryStoreProvider } from "./stores/bestiary-store"
-import CreatureFilter from "./components/creature-filter"
+import CreatureFilterForm from "./components/creature-filter-form"
 import AllCreatures from "./views/all-creatures"
 
 const BestiaryApp = () => (
   <BestiaryStoreProvider>
-    <CreatureFilter />
+    <CreatureFilterForm />
     <AllCreatures />
   </BestiaryStoreProvider>
 )
