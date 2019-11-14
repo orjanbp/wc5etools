@@ -7,7 +7,7 @@ import { BestiaryStore } from "../stores/bestiary-store"
 
 const NameSearch = styled.input``
 
-const CreatureFilter = () => {
+const CreatureFilterForm = () => {
   const { state, dispatch } = React.useContext(BestiaryStore)
 
   const filterNameAction = (name) => {
@@ -29,4 +29,4 @@ const CreatureFilter = () => {
   )
 }
 
-export default CreatureFilter
+export default CreatureFilterForm

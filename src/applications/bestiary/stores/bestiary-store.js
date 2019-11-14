@@ -1,6 +1,6 @@
 import React from "react"
 
-export const BestiaryStore = React.createContext()
+const BestiaryStore = React.createContext()
 
 const initialState = {
   filter: {
@@ -18,15 +18,14 @@ function reducer(state, action) {
   }
 }
 
-export function BestiaryStoreProvider(props) {
+function BestiaryStoreProvider(props) {
   const [state, dispatch] = React.useReducer(reducer, initialState)
   const value = { state, dispatch }
 
   return <BestiaryStore.Provider value={value}>{props.children}</BestiaryStore.Provider>
 }
 
-// import { useState } from "react"
-// import createUseContext from "constate"
+export { BestiaryStore, BestiaryStoreProvider }
 
 // const useFilter = () => {
 //   const [filter, setFilter] = useState()

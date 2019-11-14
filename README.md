@@ -43,6 +43,7 @@ The project uses the following folder structure:
       /applications
           /components
           /stores
+          /utils
           /views
       /components
           /_css
@@ -59,6 +60,8 @@ The project uses the following folder structure:
     1. **`/components`**: Reusable components that are unique for an application are contained here.
 
     2. **`/stores`**: Each app has its data stores placed in a /stores/ folder within that app directory.
+
+    2. **`/utils`**: This directory contains functions important to the app, that are self-contained enough to extract to their own files. Separate from components, as they export functions -- not JSX elements.
 
     2. **`/views`**: This directory contains all components inside an application that are composed views, rather than reusable components. Two different views of the same Bestiary app page, for example.
 
