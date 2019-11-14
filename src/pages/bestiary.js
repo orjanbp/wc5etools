@@ -2,18 +2,13 @@ import React from "react"
 import { Layout, LayoutInner } from "../components/layout"
 import SEO from "../components/seo"
 
-import { BestiaryStoreProvider } from "../stores/bestiary-store"
-import CreatureFilter from "../components/bestiary/creature-filter"
-import AllCreatures from "../components/bestiary/views/all-creatures"
+import BestiaryApp from "../applications/bestiary/app"
 
 const BestiaryPage = () => (
   <Layout>
-    <SEO title="Bestiary" />
+    <SEO title='Bestiary' />
     <LayoutInner>
-      <BestiaryStoreProvider>
-        <CreatureFilter />
-        <AllCreatures />
-      </BestiaryStoreProvider>
+      <BestiaryApp />
     </LayoutInner>
   </Layout>
 )

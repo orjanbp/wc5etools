@@ -2,8 +2,8 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import { Layout, LayoutInner } from "../components/layout"
-import CreatureReturn from "../components/bestiary/creature-return"
-import CreatureStatblock from "../components/bestiary/creature-statblock"
+import CreatureReturn from "../applications/bestiary/components/creature-return"
+import CreatureStatblock from "../applications/bestiary//components/creature-statblock"
 
 export default function Template({
   data // this prop will be injected by the GraphQL query below.

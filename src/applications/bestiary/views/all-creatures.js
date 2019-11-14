@@ -1,9 +1,9 @@
 import React from "react"
 import _ from "lodash"
 
-import { BestiaryStore } from "../../../stores/bestiary-store"
-import { getCreatureData } from "../../../stores/bestiary-data-store"
-import { CreatureListGroup, CreatureListItem } from "../creature-list"
+import { BestiaryStore } from "../stores/bestiary-store"
+import { getCreatureData } from "../stores/bestiary-data-store"
+import { CreatureListGroup, CreatureListItem } from "../components/creature-list"
 
 const filterCreatures = (creatures, filter) => {
   let nameRegex = filter.name
@@ -12,9 +12,7 @@ const filterCreatures = (creatures, filter) => {
     .join(`.*`)
   nameRegex = RegExp(nameRegex, "gi")
 
-  let filteredCreatures = _.filter(creatures, (creature) =>
-    nameRegex.test(creature.name)
-  )
+  let filteredCreatures = _.filter(creatures, (creature) => nameRegex.test(creature.name))
 
   return filteredCreatures
 }
@@ -46,7 +44,7 @@ const AllCreatures = () => {
 
   React.useEffect(() => {
     // console.log(state)
-  }, [filterCreatures])
+  })
 
   return (
     <>

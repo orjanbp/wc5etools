@@ -3,7 +3,7 @@ import styled from "styled-components"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import breakpoints from "../_partials/breakpoints"
 
-import { BestiaryStore } from "../../stores/bestiary-store"
+import { BestiaryStore } from "../stores/bestiary-store"
 
 const NameSearch = styled.input``
 

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import _ from "lodash"
-import breakpoints from "../_partials/breakpoints"
+import breakpoints from "../../../components/_partials/breakpoints"
 
 const CreatureLink = styled(Link)`
   display: flex;
