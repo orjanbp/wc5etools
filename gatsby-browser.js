@@ -9,6 +9,9 @@
 import "typeface-montserrat"
 import "typeface-josefin-sans"
 
+import "./src/css/normalize.css"
+import "./src/css/layout.css"
+
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faReddit } from "@fortawesome/free-brands-svg-icons"
