@@ -9,10 +9,6 @@ const filterCreatures = (creatures, filter) => {
     "gi"
   )
 
-  filter.type = ['humanoid']
-
-  // console.log(filter)
-
   let filteredCreatures = _.filter(creatures, (creature) => {
     let checkName = nameRegex.test(creature.name)
     let checkType = filter.type.length > 0 ? _.includes(filter.type, creature.type) : true
