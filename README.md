@@ -68,17 +68,17 @@ The project uses the following folder structure:
 
 3. **`/components`**: This directory contains all components that can be reused across the whole website.
 
-   1. **`/_css`**: This directory contains all static CSS files (boilerplates, etc.) that are used to lay the style grounds.
+   1. **`/_partials`**: This directory contains the most generic, reusable React components.
 
-   2. **`/_partials`**: This directory contains the most generic, reusable React components.
+4. **`/css`**: This directory contains all static boilerplate CSS files.
 
-4) **`/images`**: This directory contains all static images.
+5. **`/images`**: This directory contains all static images.
 
-5) **`/markdown-pages`**: This directory contains all static markdown pages, that are converted to Gatsby pages via remark.
+6. **`/markdown-pages`**: This directory contains all static markdown pages, that are converted to Gatsby pages via remark.
 
-6) **`/pages`**: This directory contains all app pages, that aren't built from a markdown page. Each app will have its own page here, rendering the views of that app.
+7. **`/pages`**: This directory contains all app pages, that aren't built from a markdown page. Each app will have its own page here, rendering the views of that app.
 
-7) **`/templates`**: This directory contains all templates used to convert markdown pages.
+8. **`/templates`**: This directory contains all templates used to convert markdown pages.
 
 ## Legal
 
