@@ -58,6 +58,9 @@ const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
 const NameSearch = styled.input`
   height: 48px;
   width: calc(50% - 4px);
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
   margin-top: 16px;
 `
 

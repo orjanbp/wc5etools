@@ -13,9 +13,6 @@ import Footer from "./_partials/footer"
 import backgroundLight from "../images/background-light.png"
 import breakpoints from "./_partials/breakpoints"
 
-import "./_css/normalize.css"
-import "./_css/layout.css"
-
 const LayoutOuter = styled.div`
   display: flex;
   flex-direction: column;
