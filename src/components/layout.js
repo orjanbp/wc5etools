@@ -16,7 +16,7 @@ const LayoutOuter = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f4f1eb;
+  background-color: #F5F3ED;
   background-position: center center;
 `
 
