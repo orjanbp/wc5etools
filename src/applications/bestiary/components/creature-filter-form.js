@@ -75,6 +75,7 @@ const CreatureFilterForm = () => {
               <CreatureFilterCheckbox
                 key={`creature-type-${type}`}
                 label={type}
+                checked={filterState.type.includes(type)}
                 onChange={(e) => {
                   filterTypeAction(type, e.target.checked)
                 }}
@@ -93,9 +94,7 @@ const CreatureFilterForm = () => {
           />
         </FlexCol>
         <FlexCol md={3}>
-          <ButtonEventHandler onClick={() => resetFilterAction()}>
-            Reset Filters
-          </ButtonEventHandler>
+          <ButtonEventHandler onClick={() => resetFilterAction()}>Reset Filters</ButtonEventHandler>
         </FlexCol>
       </FlexRow>
     </CreatureFilterContainer>

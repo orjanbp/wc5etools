@@ -23,7 +23,6 @@ const updateTypeFilter = (typeFilter, payload) => {
 }
 
 const reducer = (state, action) => {
-  console.log(state, action.payload)
   switch (action.type) {
     case "FILTER_NAME":
       return { ...state, name: action.payload }

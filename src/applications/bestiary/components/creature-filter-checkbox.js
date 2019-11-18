@@ -1,8 +1,8 @@
 import React from "react"
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import _ from "lodash"
 
-const CreatureCheckbox = styled.label`
+const CreatureCheckboxOuter = styled.label`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,11 @@ const CreatureCheckbox = styled.label`
   cursor: pointer;
 `
 
-const CreatureCheckboxIcon = styled.div`
+const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
+  display: none !important;
+`
+
+const CreatureCheckbox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,6 +23,10 @@ const CreatureCheckboxIcon = styled.div`
   background-color: #333;
   border-radius: 4px;
 
+  ${props => props.checked && css`
+    background-color: red;
+  `}
+
   & span {
     color: #fff;
     bottom: 0;
@@ -26,22 +34,15 @@ const CreatureCheckboxIcon = styled.div`
   }
 `
 
-const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
-  display: none !important;
-
-  &:checked ~ ${CreatureCheckboxIcon} {
-    background-color: red;
-  }
-`
-
-const CreatureFilterCheckbox = ({ key = "", label = "", onChange = null }) => {
+const CreatureFilterCheckbox = ({ key = "", checked = null, label = "", onChange = null }) => {
+  console.log(checked)
   return (
-    <CreatureCheckbox key={key}>
-      <HiddenCheckbox id={key} onChange={onChange} />
-      <CreatureCheckboxIcon>
+    <CreatureCheckboxOuter key={key}>
+      <HiddenCheckbox id={key} onChange={onChange} checked={checked} />
+      <CreatureCheckbox checked={checked}>
         <span>{_.toUpper(label)}</span>
-      </CreatureCheckboxIcon>
-    </CreatureCheckbox>
+      </CreatureCheckbox>
+    </CreatureCheckboxOuter>
   )
 }
 
