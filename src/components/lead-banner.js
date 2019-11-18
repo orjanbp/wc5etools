@@ -1,7 +1,7 @@
 import styled from "styled-components"
-import breakpoints from "../breakpoints"
+import breakpoints from "./breakpoints"
 
-import BannerImageDark from "../../images/bannerimagedark.jpg"
+import BannerImageDark from "../images/bannerimagedark.jpg"
 
 const LeadText = styled.div`
   & h1 {

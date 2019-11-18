@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import breakpoints from "../breakpoints"
+import breakpoints from "./breakpoints"
 
 const LinkBlock = styled(Link)`
   display: block;

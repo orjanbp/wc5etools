@@ -45,8 +45,7 @@ The project uses the following folder structure:
           /utils
           /views
       /components
-          /_css
-          /partials
+      /css
       /images
       /markdown-pages
       /pages
@@ -67,8 +66,6 @@ The project uses the following folder structure:
    5. **`/views`**: This directory contains all components inside an application that are composed views, rather than reusable components. Two different views of the same Bestiary app page, for example.
 
 3. **`/components`**: This directory contains all components that can be reused across the whole website.
-
-   1. **`/partials`**: This directory contains the most generic, reusable React components.
 
 4. **`/css`**: This directory contains all static boilerplate CSS files.
 
