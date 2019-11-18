@@ -53,7 +53,7 @@ const Button = styled.a`
 `
 
 export const ButtonEventHandler = (props) => (
-  <Button as={Button} big={props.big} {...props}>
+  <Button as={`button`} big={props.big} {...props}>
     {props.children}
   </Button>
 )

@@ -4,12 +4,12 @@ import _ from "lodash"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import breakpoints from "../breakpoints"
 
-import { BestiaryStore } from "../stores/bestiary-store"
+import { FilterStore } from "../stores/filter-store"
 import { getCreatureTypes } from "../data/creature-types"
 
 import { FlexRow, FlexCol } from "../../../components/flex-layout"
 import CreatureFilterCheckbox from "./creature-filter-checkbox"
-import { ButtonEventHandler } from '../../../components/button'
+import { ButtonEventHandler } from "../../../components/button"
 
 const CreatureFilterContainer = styled.div`
   margin-bottom: 64px;
@@ -39,7 +39,7 @@ const NameSearch = styled.input`
 `
 
 const CreatureFilterForm = () => {
-  const { state, dispatch } = React.useContext(BestiaryStore)
+  const { filterState, dispatch } = React.useContext(FilterStore)
   const creatureTypes = getCreatureTypes()
 
   const filterTypeAction = (type, checked) => {
@@ -56,6 +56,13 @@ const CreatureFilterForm = () => {
     return dispatch({
       type: "FILTER_NAME",
       payload: name
+    })
+  }
+
+  const resetFilterAction = () => {
+    return dispatch({
+      type: "RESET_FILTER",
+      payload: null
     })
   }
 
@@ -80,12 +87,15 @@ const CreatureFilterForm = () => {
         <FlexCol md={9}>
           <NameSearch
             type='text'
+            value={filterState.name}
             placeholder='Search Creature Names'
             onChange={(e) => filterNameAction(e.target.value)}
           />
         </FlexCol>
         <FlexCol md={3}>
-          <button>Reset Filters</button>
+          <ButtonEventHandler onClick={() => resetFilterAction()}>
+            Reset Filters
+          </ButtonEventHandler>
         </FlexCol>
       </FlexRow>
     </CreatureFilterContainer>
