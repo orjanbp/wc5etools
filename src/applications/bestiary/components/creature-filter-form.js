@@ -34,8 +34,7 @@ const NameSearch = styled.input`
   background-color: #fff;
   border: 1px solid #d1d1d1;
   border-radius: 4px;
-  margin-top: 16px;
-  margin-bottom: 0px;
+  margin: 0px;
 `
 
 const CreatureFilterForm = () => {
@@ -85,7 +84,7 @@ const CreatureFilterForm = () => {
         </FlexCol>
       </FlexRow>
       <FlexRow>
-        <FlexCol md={9}>
+        <FlexCol md={10}>
           <NameSearch
             type='text'
             value={filterState.name}
@@ -93,8 +92,10 @@ const CreatureFilterForm = () => {
             onChange={(e) => filterNameAction(e.target.value)}
           />
         </FlexCol>
-        <FlexCol md={3}>
-          <ButtonEventHandler onClick={() => resetFilterAction()}>Reset Filters</ButtonEventHandler>
+        <FlexCol md={2}>
+          <ButtonEventHandler style={{ width: "100%" }} onClick={() => resetFilterAction()}>
+            Reset Filters
+          </ButtonEventHandler>
         </FlexCol>
       </FlexRow>
     </CreatureFilterContainer>

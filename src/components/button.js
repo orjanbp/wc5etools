@@ -5,11 +5,13 @@ import breakpoints from "./breakpoints"
 
 const Button = styled.a`
   display: inline-block;
+  padding: 13px 16px;
+  margin: 0px;
   background-color: #c0392b;
-  padding: 8px 16px;
   border: 1px solid #b13428;
   border-radius: 2px;
   color: #fff;
+  font-size: 1.4rem;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -30,16 +32,15 @@ const Button = styled.a`
     border-color: #a33025;
   }
 
-  ${(props) =>
-    props.big &&
-    css`
-      padding: 16px 24px;
-      border-color: #d85c4f;
+  ${(props) => props.big && css`
+    padding: 20px 32px;
+    border-color: #d85c4f;
+    font-size: 1.6rem;
 
-      &:active {
-        border-color: #cf3e2e;
-      }
-    `}
+    &:active {
+      border-color: #cf3e2e;
+    }
+  `}
 
   @media ${breakpoints.xsmall} {
     display: block;
