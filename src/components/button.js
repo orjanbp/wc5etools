@@ -9,7 +9,8 @@ const Button = styled.a`
   margin: 0px;
   background-color: #c0392b;
   border: 1px solid #b13428;
-  border-radius: 2px;
+  border-radius: 3px
+;
   color: #fff;
   font-size: 1.4rem;
   text-decoration: none;

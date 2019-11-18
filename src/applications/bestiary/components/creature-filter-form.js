@@ -33,7 +33,8 @@ const NameSearch = styled.input`
   width: 100%;
   background-color: #fff;
   border: 1px solid #d1d1d1;
-  border-radius: 4px;
+  border-radius: 3px
+;
   margin: 0px;
 `
 
