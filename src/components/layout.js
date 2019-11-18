@@ -8,8 +8,8 @@
 import React from "react"
 import styled, { css } from "styled-components"
 
-import Header from "./_partials/header"
-import Footer from "./_partials/footer"
+import Header from "./partials/header"
+import Footer from "./partials/footer"
 import backgroundLight from "../images/background-light.png"
 import breakpoints from "./breakpoints"
 
