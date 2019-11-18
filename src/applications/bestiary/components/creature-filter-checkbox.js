@@ -20,18 +20,24 @@ const CreatureCheckbox = styled.div`
   justify-content: center;
   width: 100%;
   height: 64px;
-  background-color: #333;
+  background-color: #323232;
+  border: 2px solid transparent;
   border-radius: 3px;
-
-  ${props => props.checked && css`
-    background-color: red;
-  `}
+  box-sizing: border-box;
 
   & span {
     color: #fff;
     bottom: 0;
     font-size: 1.2rem;
   }
+
+  ${props => props.checked && css`
+    border-color: #896F08;
+
+    & span {
+      color: #f4d03e;
+    }
+  `}
 `
 
 const CreatureFilterCheckbox = ({ key = "", checked = null, label = "", onChange = null }) => {

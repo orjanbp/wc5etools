@@ -1,8 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import _ from "lodash"
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import breakpoints from "../breakpoints"
+import breakpoints from '../../../components/breakpoints'
 
 import { FilterStore } from "../stores/filter-store"
 import { getCreatureTypes } from "../data/creature-types"
@@ -12,7 +11,7 @@ import CreatureFilterCheckbox from "./creature-filter-checkbox"
 import { ButtonEventHandler } from "../../../components/button"
 
 const CreatureFilterContainer = styled.div`
-  margin-bottom: 64px;
+  margin-bottom: 56px;
 `
 
 const CreatureTypeSelection = styled.div`
@@ -26,6 +25,18 @@ const CreatureTypeSelection = styled.div`
     width: calc((100% / 6) - 4px);
     margin-bottom: 4px;
   }
+
+  @media ${breakpoints.med} {
+    & > * {
+      width: calc((100% / 4) - 4px);
+    }
+  }
+
+  @media ${breakpoints.small} {
+    & > * {
+      width: calc((100% / 2) - 4px);
+    }
+  }
 `
 
 const NameSearch = styled.input`
@@ -33,8 +44,7 @@ const NameSearch = styled.input`
   width: 100%;
   background-color: #fff;
   border: 1px solid #d1d1d1;
-  border-radius: 3px
-;
+  border-radius: 3px;
   margin: 0px;
 `
 
@@ -69,23 +79,23 @@ const CreatureFilterForm = () => {
   return (
     <CreatureFilterContainer>
       <FlexRow>
-        <FlexCol as={CreatureTypeSelection} md={12}>
-          {creatureTypes.map((type) => {
-            return (
-              <CreatureFilterCheckbox
-                key={`creature-type-${type}`}
-                label={type}
-                checked={filterState.type.includes(type)}
-                onChange={(e) => {
-                  filterTypeAction(type, e.target.checked)
-                }}
-              />
-            )
-          })}
+        <FlexCol md={12}>
+          <CreatureTypeSelection>
+            {creatureTypes.map((type) => {
+              return (
+                <CreatureFilterCheckbox
+                  key={`creature-type-${type}`}
+                  label={type}
+                  checked={filterState.type.includes(type)}
+                  onChange={(e) => {
+                    filterTypeAction(type, e.target.checked)
+                  }}
+                />
+              )
+            })}
+          </CreatureTypeSelection>
         </FlexCol>
-      </FlexRow>
-      <FlexRow>
-        <FlexCol md={10}>
+        <FlexCol lg={9} md={8} sm={12}>
           <NameSearch
             type='text'
             value={filterState.name}
@@ -93,7 +103,7 @@ const CreatureFilterForm = () => {
             onChange={(e) => filterNameAction(e.target.value)}
           />
         </FlexCol>
-        <FlexCol md={2}>
+        <FlexCol lg={3} md={4} sm={12}>
           <ButtonEventHandler style={{ width: "100%" }} onClick={() => resetFilterAction()}>
             Reset Filters
           </ButtonEventHandler>
