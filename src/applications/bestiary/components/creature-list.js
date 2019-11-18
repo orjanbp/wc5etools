@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import _ from "lodash"
-import breakpoints from "../../../components/_partials/breakpoints"
+import breakpoints from "../../../components/breakpoints"
 
 const CreatureLink = styled(Link)`
   display: flex;
@@ -74,11 +74,8 @@ const CreatureListItem = ({ creature }) => (
 const CreatureListGroup = styled.div`
   width: 100%;
 
-  & + & {
-    padding-top: 64px;
-  }
-
   & h3 {
+    margin-top: 20px;
     margin-left: 4px;
     color: #c0392b;
   }

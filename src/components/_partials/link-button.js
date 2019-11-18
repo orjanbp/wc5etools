@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
 import { Link } from "gatsby"
-import breakpoints from "./breakpoints"
+import breakpoints from "../breakpoints"
 
 const Button = styled.a`
   display: inline-block;

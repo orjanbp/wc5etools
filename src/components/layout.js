@@ -11,7 +11,7 @@ import styled, { css } from "styled-components"
 import Header from "./_partials/header"
 import Footer from "./_partials/footer"
 import backgroundLight from "../images/background-light.png"
-import breakpoints from "./_partials/breakpoints"
+import breakpoints from "./breakpoints"
 
 const LayoutOuter = styled.div`
   display: flex;

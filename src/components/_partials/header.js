@@ -2,7 +2,7 @@ import React from "react"
 import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import breakpoints from './breakpoints'
+import breakpoints from '../breakpoints'
 
 const HeaderBar = styled.header`
   display: flex;

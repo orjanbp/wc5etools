@@ -6,9 +6,6 @@ const CreatureCheckbox = styled.label`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 4px;
-  margin-right: 4px;
-  margin-bottom: 8px;
   box-sizing: border-box;
   cursor: pointer;
 `
