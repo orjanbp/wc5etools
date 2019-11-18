@@ -12,7 +12,8 @@ const CreatureLink = styled(Link)`
   padding: 20px 32px;
   margin-bottom: 8px;
   border: 1px solid #ede3d4;
-  border-radius: 2px;
+  border-radius: 3px
+;
   color: #2c3e50;
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);

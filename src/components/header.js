@@ -56,7 +56,8 @@ const HeaderBarLink = styled.a`
   font-weight: 400;
   text-decoration: none;
   vertical-align: middle;
-  border-radius: 2px;
+  border-radius: 3px
+;
 
   & svg {
     font-size: 2.4rem;

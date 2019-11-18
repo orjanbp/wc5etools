@@ -7,7 +7,8 @@ const Statblock = styled.div`
   background-color: #fbfaf9;
   padding: 48px;
   border: 1px solid #ede3d4;
-  border-radius: 2px;
+  border-radius: 3px
+;
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
 

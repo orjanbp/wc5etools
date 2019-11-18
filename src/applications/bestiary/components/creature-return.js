@@ -10,7 +10,8 @@ const ReturnButton = styled(Link)`
   padding: 12px 16px;
   margin-bottom: 16px;
   border: 1px solid #ede3d4;
-  border-radius: 2px;
+  border-radius: 3px
+;
   color: #2c3e50;
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
