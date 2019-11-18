@@ -5,7 +5,7 @@ import styled from "styled-components"
 import { Layout, LayoutInner } from "../components/layout"
 import SEO from "../components/seo"
 
-import ContentBlock from "../components/partials/content-block"
+import ContentBlock from "../components/content-block"
 
 const LegalText = styled.div`
   margin-bottom: 40px;

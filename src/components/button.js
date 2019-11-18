@@ -1,8 +1,7 @@
 import React from "react"
-import PropTypes from "prop-types"
 import styled, { css } from "styled-components"
 import { Link } from "gatsby"
-import breakpoints from "../breakpoints"
+import breakpoints from "./breakpoints"
 
 const Button = styled.a`
   display: inline-block;
@@ -31,14 +30,16 @@ const Button = styled.a`
     border-color: #a33025;
   }
 
-  ${(props) => props.big && css`
-    padding: 16px 24px;
-    border-color: #D85C4F;
+  ${(props) =>
+    props.big &&
+    css`
+      padding: 16px 24px;
+      border-color: #d85c4f;
 
-    &:active {
-      border-color: #CF3E2E;
-    }
-  `}
+      &:active {
+        border-color: #cf3e2e;
+      }
+    `}
 
   @media ${breakpoints.xsmall} {
     display: block;
@@ -51,31 +52,20 @@ const Button = styled.a`
   }
 `
 
-const LinkButton = ({ children, to, href, big }) => {
-  if (to !== "")
-    return (
-      <Button as={Link} to={to} big={big}>
-        {children}
-      </Button>
-    )
-  if (to === "")
-    return (
-      <Button href={href} target="_blank" big={big}>
-        {children}
-      </Button>
-    )
-}
+export const ButtonEventHandler = (props) => (
+  <Button as={Button} big={props.big} {...props}>
+    {props.children}
+  </Button>
+)
 
-LinkButton.propTypes = {
-  to: PropTypes.string,
-  href: PropTypes.string,
-  big: PropTypes.bool
-}
+export const ButtonRouteLink = (props) => (
+  <Button as={Link} to={props.to} big={props.big} {...props}>
+    {props.children}
+  </Button>
+)
 
-LinkButton.defaultProps = {
-  to: "",
-  href: "",
-  big: false
-}
-
-export default LinkButton
+export const ButtonExternalLink = (props) => (
+  <Button href={props.href} target='_blank' big={props.big} {...props}>
+    {props.children}
+  </Button>
+)

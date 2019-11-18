@@ -2,13 +2,14 @@ import React from "react"
 import styled from "styled-components"
 import _ from "lodash"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import breakpoints from "../partials/breakpoints"
+// import breakpoints from "../breakpoints"
 
 import { BestiaryStore } from "../stores/bestiary-store"
 import { getCreatureTypes } from "../data/creature-types"
 
 import { FlexRow, FlexCol } from "../../../components/flex-layout"
 import CreatureFilterCheckbox from "./creature-filter-checkbox"
+import { ButtonEventHandler } from '../../../components/button'
 
 const CreatureFilterContainer = styled.div`
   margin-bottom: 64px;

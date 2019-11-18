@@ -3,9 +3,9 @@ import React from "react"
 import { Layout, LayoutInner } from "../components/layout"
 import SEO from "../components/seo"
 
-import { LeadBanner, LeadText, LeadButtons } from "../components/partials/lead-banner"
-import { LinkBlockHeader, LinkBlockGroup, LinkBlockItem } from "../components/partials/link-block"
-import LinkButton from "../components/partials/link-button"
+import { LeadBanner, LeadText, LeadButtons } from "../components/lead-banner"
+import { LinkBlockHeader, LinkBlockGroup, LinkBlockItem } from "../components/link-block"
+import { ButtonExternalLink } from "../components/button"
 
 const IndexPage = () => (
   <Layout>
@@ -19,12 +19,12 @@ const IndexPage = () => (
         </p>
       </LeadText>
       <LeadButtons>
-        <LinkButton big href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
+        <ButtonExternalLink big href="https://drive.google.com/drive/folders/1kVoAMR8TiO3CXFYcigFN2B6zk62xcnv9">
           Get the Books
-        </LinkButton>
-        <LinkButton big href="https://www.reddit.com/r/wc5e/">
+        </ButtonExternalLink>
+        <ButtonExternalLink big href="https://www.reddit.com/r/wc5e/">
           Visit Reddit
-        </LinkButton>
+        </ButtonExternalLink>
       </LeadButtons>
     </LeadBanner>
     <LayoutInner>
