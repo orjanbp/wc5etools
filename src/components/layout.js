@@ -10,7 +10,6 @@ import styled, { css } from "styled-components"
 
 import Header from "./header"
 import Footer from "./footer"
-import backgroundLight from "../images/background-light.png"
 import breakpoints from "./breakpoints"
 
 const LayoutOuter = styled.div`
@@ -18,7 +17,6 @@ const LayoutOuter = styled.div`
   flex-direction: column;
   min-height: 100vh;
   background-color: #f4f1eb;
-  background-image: url(${backgroundLight});
   background-position: center center;
 `
 
