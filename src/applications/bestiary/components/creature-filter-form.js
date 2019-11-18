@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import _ from "lodash"
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-// import breakpoints from "../_partials/breakpoints"
+// import breakpoints from "../partials/breakpoints"
 
 import { BestiaryStore } from "../stores/bestiary-store"
 import { getCreatureTypes } from "../data/creature-types"

@@ -3,9 +3,9 @@ import React from "react"
 import { Layout, LayoutInner } from "../components/layout"
 import SEO from "../components/seo"
 
-import { LeadBanner, LeadText, LeadButtons } from "../components/_partials/lead-banner"
-import { LinkBlockHeader, LinkBlockGroup, LinkBlockItem } from "../components/_partials/link-block"
-import LinkButton from "../components/_partials/link-button"
+import { LeadBanner, LeadText, LeadButtons } from "../components/partials/lead-banner"
+import { LinkBlockHeader, LinkBlockGroup, LinkBlockItem } from "../components/partials/link-block"
+import LinkButton from "../components/partials/link-button"
 
 const IndexPage = () => (
   <Layout>

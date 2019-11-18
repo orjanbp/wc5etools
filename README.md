@@ -46,7 +46,7 @@ The project uses the following folder structure:
           /views
       /components
           /_css
-          /_partials
+          /partials
       /images
       /markdown-pages
       /pages
@@ -68,7 +68,7 @@ The project uses the following folder structure:
 
 3. **`/components`**: This directory contains all components that can be reused across the whole website.
 
-   1. **`/_partials`**: This directory contains the most generic, reusable React components.
+   1. **`/partials`**: This directory contains the most generic, reusable React components.
 
 4. **`/css`**: This directory contains all static boilerplate CSS files.
 
