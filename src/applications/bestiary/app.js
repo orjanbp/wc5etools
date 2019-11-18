@@ -1,14 +1,14 @@
 import React from "react"
 
-import { BestiaryStoreProvider } from "./stores/bestiary-store"
+import { FilterStoreProvider } from "./stores/filter-store"
 import CreatureFilterForm from "./components/creature-filter-form"
 import AllCreatures from "./views/all-creatures"
 
 const BestiaryApp = () => (
-  <BestiaryStoreProvider>
+  <FilterStoreProvider>
     <CreatureFilterForm />
     <AllCreatures />
-  </BestiaryStoreProvider>
+  </FilterStoreProvider>
 )
 
 export default BestiaryApp
