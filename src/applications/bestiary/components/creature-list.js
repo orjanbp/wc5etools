@@ -76,15 +76,9 @@ const CreatureListGroup = styled.div`
   width: 100%;
 
   & h3 {
-    margin-top: 20px;
+    margin-top: 48px;
     margin-left: 4px;
     color: #c0392b;
-  }
-
-  @media ${breakpoints.med} {
-    & + & {
-      padding-top: 32px;
-    }
   }
 `
 
