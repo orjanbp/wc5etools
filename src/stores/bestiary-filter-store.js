@@ -39,7 +39,7 @@ const BestiaryFilterStoreProvider = (props) => {
   const [filterState, dispatch] = React.useReducer(reducer, initialState)
   const value = { filterState, dispatch }
 
-  console.log("BestiaryFilterStoreProvider Engaged", filterState)
+  // console.log("BestiaryFilterStoreProvider Engaged", filterState)
 
   return <BestiaryFilterStore.Provider value={value}>{props.children}</BestiaryFilterStore.Provider>
 }
