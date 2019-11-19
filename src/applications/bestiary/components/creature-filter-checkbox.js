@@ -40,16 +40,13 @@ const CreatureCheckbox = styled.div`
   `}
 `
 
-const CreatureFilterCheckbox = ({ key = "", checked = null, label = "", onChange = null }) => {
-  console.log(checked)
-  return (
-    <CreatureCheckboxOuter key={key}>
-      <HiddenCheckbox id={key} onChange={onChange} checked={checked} />
-      <CreatureCheckbox checked={checked}>
-        <span>{_.toUpper(label)}</span>
-      </CreatureCheckbox>
-    </CreatureCheckboxOuter>
-  )
-}
+const CreatureFilterCheckbox = ({ checked = null, label = "", onChange = null }) => (
+  <CreatureCheckboxOuter>
+    <HiddenCheckbox onChange={onChange} checked={checked} />
+    <CreatureCheckbox checked={checked}>
+      <span>{_.toUpper(label)}</span>
+    </CreatureCheckbox>
+  </CreatureCheckboxOuter>
+)
 
 export default CreatureFilterCheckbox
