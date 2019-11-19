@@ -43,20 +43,22 @@ const LegalPage = () => {
   `)
 
   return (
-    <Layout>
-      <SEO title="Legal Stuff" />
-      <LayoutInner>
-        <ContentBlock>
-          <h1>Legal Stuff </h1>
-          {data.legalText.edges.map((edge) => (
-            <LegalText
-              key={edge.node.id}
-              dangerouslySetInnerHTML={{ __html: edge.node.html }}
-            ></LegalText>
-          ))}
-        </ContentBlock>
-      </LayoutInner>
-    </Layout>
+    <>
+      <Layout>
+        <SEO title='Legal Stuff' />
+        <LayoutInner>
+          <ContentBlock>
+            <h1>Legal Stuff </h1>
+            {data.legalText.edges.map((edge) => (
+              <LegalText
+                key={edge.node.id}
+                dangerouslySetInnerHTML={{ __html: edge.node.html }}
+              ></LegalText>
+            ))}
+          </ContentBlock>
+        </LayoutInner>
+      </Layout>
+    </>
   )
 }
 
