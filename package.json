@@ -40,8 +40,9 @@
   "scripts": {
     "gh-pages-clean": "node node_modules/gh-pages/bin/gh-pages-clean",
     "gh-pages": "gh-pages -d public",
-    "build": "gatsby build",
-    "deploy": "npm run gh-pages-clean && npm run gh-pages",
+    "build-local": "gatsby build",
+    "build-release": "gatsby build --prefix-paths",
+    "deploy": "npm run gh-pages-clean && npm run build-release && npm run gh-pages",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json}\"",
     "start": "npm run develop",
