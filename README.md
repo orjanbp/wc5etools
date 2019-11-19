@@ -41,7 +41,6 @@ The project uses the following folder structure:
       /applications
           /components
           /data
-          /stores
           /utils
           /views
       /components
@@ -49,6 +48,7 @@ The project uses the following folder structure:
       /images
       /markdown-pages
       /pages
+      /stores
       /templates
 
 1. **`/parser`**: This directory contains a Node app for transpiling the data in the original project books to markdown pages that can be used in this project.
@@ -58,8 +58,6 @@ The project uses the following folder structure:
    1. **`/components`**: Reusable components that are unique for an application are contained here.
 
    2. **`/data`**: Static Graphql queries for data that is used by the component is stored here. Static arrays and objects, retrieved as getters, can also be stored here.
-
-   3. **`/stores`**: Each app has its data stores placed in a /stores/ folder within that app directory.
 
    4. **`/utils`**: This directory contains functions important to the app, that are self-contained enough to extract to their own files. Separate from components, as they export functions -- not JSX elements.
 
@@ -74,6 +72,8 @@ The project uses the following folder structure:
 6. **`/markdown-pages`**: This directory contains all static markdown pages, that are converted to Gatsby pages via remark.
 
 7. **`/pages`**: This directory contains all app pages, that aren't built from a markdown page. Each app will have its own page here, rendering the views of that app.
+
+3. **`/stores`**: Data stores are kept globally and used per-context in different apps. Contexts are provided to the app globally through `gatsby-browser.js` and `gatsby-ssr.js`.
 
 8. **`/templates`**: This directory contains all templates used to convert markdown pages.
 
