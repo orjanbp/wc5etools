@@ -2,7 +2,7 @@
   "name": "wc5etools",
   "private": true,
   "description": "A Gatsby website featuring tools for a Warcraft D&D 5E supplement.",
-  "version": "0.1.1",
+  "version": "1.1.0",
   "author": "Ørjan Polden <oerjanbpolden@gmail.com>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
