@@ -1,7 +1,7 @@
 import React from "react"
 import _ from "lodash"
 
-import { FilterStore } from "../stores/filter-store"
+import { BestiaryFilterStore } from "../../../stores/bestiary-filter-store"
 import { getCreatureData } from "../data/creature-data"
 
 import filterCreatures from "../utils/filter-creatures"
@@ -26,7 +26,7 @@ const getCreaturesByCR = (creatures) => {
 }
 
 const AllCreatures = () => {
-  const { filterState } = React.useContext(FilterStore)
+  const { filterState } = React.useContext(BestiaryFilterStore)
   const creatureData = getCreatureData()
 
   let creatures = filterCreatures(creatureData, filterState)

@@ -1,7 +1,7 @@
 import React from "react"
 import _ from "lodash"
 
-const FilterStore = React.createContext()
+const BestiaryFilterStore = React.createContext()
 
 const initialState = {
   name: "",
@@ -35,11 +35,13 @@ const reducer = (state, action) => {
   }
 }
 
-const FilterStoreProvider = (props) => {
+const BestiaryFilterStoreProvider = (props) => {
   const [filterState, dispatch] = React.useReducer(reducer, initialState)
   const value = { filterState, dispatch }
 
-  return <FilterStore.Provider value={value}>{props.children}</FilterStore.Provider>
+  console.log("BestiaryFilterStoreProvider Engaged", filterState)
+
+  return <BestiaryFilterStore.Provider value={value}>{props.children}</BestiaryFilterStore.Provider>
 }
 
-export { FilterStore, FilterStoreProvider }
+export { BestiaryFilterStore, BestiaryFilterStoreProvider }

@@ -1,9 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import _ from "lodash"
-import breakpoints from '../../../components/breakpoints'
+import breakpoints from "../../../components/breakpoints"
 
-import { FilterStore } from "../stores/filter-store"
+import { BestiaryFilterStore } from "../../../stores/bestiary-filter-store"
 import { getCreatureTypes } from "../data/creature-types"
 
 import { FlexRow, FlexCol } from "../../../components/flex-layout"
@@ -49,7 +49,7 @@ const NameSearch = styled.input`
 `
 
 const CreatureFilterForm = () => {
-  const { filterState, dispatch } = React.useContext(FilterStore)
+  const { filterState, dispatch } = React.useContext(BestiaryFilterStore)
   const creatureTypes = getCreatureTypes()
 
   const filterTypeAction = (type, checked) => {
