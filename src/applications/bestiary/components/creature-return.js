@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+
+import { Location } from "@reach/router"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import breakpoints from "../../../components/breakpoints"
@@ -10,8 +12,7 @@ const ReturnButton = styled(Link)`
   padding: 12px 16px;
   margin-bottom: 16px;
   border: 1px solid #ede3d4;
-  border-radius: 3px
-;
+  border-radius: 3px;
   color: #2c3e50;
   text-decoration: none;
   box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.12);
@@ -61,10 +62,22 @@ const ReturnButton = styled(Link)`
 `
 
 const CreatureReturn = () => (
-  <ReturnButton to="/bestiary">
-    <FontAwesomeIcon icon={["fa", "chevron-left"]} />
-    Back to Bestiary
-  </ReturnButton>
+  <Location>
+    {({ location }) => {
+      let fromBestiary = location.state ? location.state.fromBestiary : false
+
+      return (
+        <ReturnButton
+          as={fromBestiary ? "button" : null}
+          to={fromBestiary ? null : "/bestiary"}
+          onClick={fromBestiary ? () => window.history.back() : null}
+        >
+          <FontAwesomeIcon icon={["fa", "chevron-left"]} />
+          Back to Bestiary
+        </ReturnButton>
+      )
+    }}
+  </Location>
 )
 
 export default CreatureReturn
